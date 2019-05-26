@@ -18,7 +18,7 @@ def data(fhandle, fh):
 
             count += 1
             data = {'ADSB in mlat':line, 'Timestamp':line[1:13], 'ADSB message':line[13:len(line)-1]}
-            print(json.dumps(data, indent=4, separators=(',',':')))#encode('utf-8'))
+            #print(json.dumps(data, indent=4, separators=(',',':')))#encode('utf-8'))
             lst.append(data.copy())
     #print(lst)
     json.dump(lst, fh)
