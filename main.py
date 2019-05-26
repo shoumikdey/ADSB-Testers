@@ -15,7 +15,7 @@ def data(fhandle):
 
 def main():
     if "--file" not in sys.argv:
-        path = "recordings/*.dat"
+        path = "recordings/*"
         files = glob.glob(path)
         for fname in files:
             fhandle = open(fname)
