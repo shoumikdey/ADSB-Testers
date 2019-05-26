@@ -5,8 +5,8 @@ import os
 
 cli_args = sys.argv[1:]
 file_name = ""
-input_path = "recordings/"
-output_path = "output_json/"
+input_path = "recordings"+os.sep
+output_path = "output_json"+os.sep
 
 def data(fhandle, filename):
     count = 0
@@ -30,7 +30,7 @@ def main():                                                   #no arguments
         files = glob.glob(path)
         for fname in files:
             fhandle = open(fname)
-            data(fhandle, fname[fname.index('/')+1:])
+            data(fhandle, fname[fname.index(os.sep)+1:])
     else:                                                        #arguments block
         file_name = sys.argv[sys.argv.index("--file")+1]
         if "." not in file_name:
@@ -38,10 +38,10 @@ def main():                                                   #no arguments
             files = glob.glob(path)
             for fname in files:
                 fhandle = open(fname)
-                data(fhandle, fname[fname.index('/')+1:])
+                data(fhandle, fname[fname.index(os.sep)+1:])
         else:
             path=file_name
-            data(open(path), path[path.index('/')+1:])
+            data(open(path), path[path.index(os.sep)+1:])
 
 
 if __name__ == '__main__':
