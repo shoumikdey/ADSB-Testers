@@ -8,8 +8,44 @@ cli_args = sys.argv[1:]
 file_name = ""
 input_path = "recordings"+os.sep
 output_path = "output_json"+os.sep
+schema = {
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "type": "object",
+  "properties": {
+    "id": {
+      "type": "integer"
+    },
+    "type": {
+      "type": "string"
+    },
+    "ADSB_mlat": {
+      "type": "string"
+    },
+    "data": {
+      "type": "object",
+      "properties": {
+        "Timestamp": {
+          "type": "string"
+        },
+        "ADSB_message": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "Timestamp",
+        "ADSB_message"
+      ]
+    }
+  },
+  "required": [
+    "id",
+    "type",
+    "ADSB_mlat",
+    "data"
+  ]
+}
 
-def data(fhandle, fh):
+def data(fhandle, fh, sch_json):
     flag = False
     id = 0
     lst = list()
@@ -29,6 +65,10 @@ def data(fhandle, fh):
     #print(lst)
     s=json.dumps(lst, indent=4, separators=(',',':'))
     fh.write(s)
+    jsonSchema = list()
+    jsonSchema.append(schema)
+    print(jsonSchema)
+    sch_json.write(json.dumps(jsonSchema, indent=4, separators=(',',':')))
             #fh.write('\n')
     if not flag:
         print("No dump1090 mlat format frame found")
@@ -40,8 +80,10 @@ def main():                                                   #no arguments
         for fname in files:
             fhandle = open(fname)
             fullPath = os.path.join(output_path+fname[fname.index(os.sep)+1:]+".json")
+            schema_path=os.path.join(output_path+fname[fname.index(os.sep)+1:]+".schema.json")
             fh = open(fullPath, "a")
-            data(fhandle, fh)
+            sch = open(schema_path, "w")
+            data(fhandle, fh, sch)
             fh.close()
     else:                                                        #arguments block
         file_name = sys.argv[sys.argv.index("--file")+1]
@@ -51,13 +93,17 @@ def main():                                                   #no arguments
             for fname in files:
                 fhandle = open(fname)
                 fullPath = os.path.join(output_path+fname[fname.index(os.sep)+1:]+".json")
+                schema_path = os.path.join(output_path+fname[fname.index(os.sep)+1:]+".schema.json")
                 fh = open(fullPath, "a")
-                data(fhandle, fh)
+                sch = open(schema_path, "w")
+                data(fhandle, fh, sch)
                 fh.close()
         else:
             fullPath = os.path.join(output_path+file_name[file_name.index(os.sep)+1:]+".json")
+            schema_path = os.path.join(output_path+file_name[file_name.index(os.sep)+1:]+".schema.json")
             fh = open(fullPath, "a")
-            data(open(file_name), fh)
+            sch = open(schema_path, "w")
+            data(open(file_name), fh, sch)
             fh.close()
 
 
