@@ -10,20 +10,22 @@ input_path = "recordings"+os.sep
 output_path = "output_json"+os.sep
 
 def data(fhandle, fh):
-    count = 0
+    flag = False
+    id = 0
     lst = list()
     for line in fhandle:
         line = line.rstrip()
         if line.startswith('@') and line.endswith(';') and (len(line) == 42 or len(line) == 28):
-
-            count += 1
-            data = {'ADSB in mlat':line, 'Timestamp':line[1:13], 'ADSB message':line[13:len(line)-1]}
-            print(json.dumps(data, indent=4, separators=(',',':')))#encode('utf-8'))
+            id += 1
+            flag = True
+            data = {"id":id, "type" : "ADSB_in_mlat", "ADSB_mlat":line, "Timestamp":line[1:13], "ADSB_message":line[13:len(line)-1]}
+            #print(json.dumps(data, indent=4, separators=(',',':')))#encode('utf-8'))
             lst.append(data.copy())
     #print(lst)
-    json.dump(lst, fh)
+    s=json.dumps(lst, indent=4, separators=(',',':'))
+    fh.write(s)
             #fh.write('\n')
-    if count == 0:
+    if not flag:
         print("No dump1090 mlat format frame found")
 
 def main():                                                   #no arguments
