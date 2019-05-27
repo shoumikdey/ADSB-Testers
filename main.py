@@ -1,11 +1,10 @@
 import json
 import glob
-import sys
 import os
 from time import gmtime, strftime
 import time
+import argparse
 
-cli_args = sys.argv[1:]
 file_name = ""
 input_path = "recordings"+os.sep
 output_path = "output_json"+os.sep
@@ -83,41 +82,26 @@ def data(fhandle, fh, sch_json):
     if not flag:
         print("No dump1090 mlat format frame found")
 
-def main():                                                   #no arguments
-    if "--file" not in cli_args:
-        path = input_path+"*"
-        files = glob.glob(path)
-        for fname in files:
-            fhandle = open(fname)
-            fullPath = os.path.join(output_path+fname[fname.index(os.sep)+1:]+".json")
-            schema_path=os.path.join(output_path+fname[fname.index(os.sep)+1:]+".schema.json")
-            fh = open(fullPath, "a")
-            sch = open(schema_path, "w")
-            data(fhandle, fh, sch)
-            fh.close()
-    else:                                                        #arguments block
-        file_name = sys.argv[sys.argv.index("--file")+1]
-        if "." not in file_name:
-            path = str(file_name)+"*"
-            files = glob.glob(path)
-            for fname in files:
-                fhandle = open(fname)
-                fullPath = os.path.join(output_path+fname[fname.index(os.sep)+1:]+".json")
-                schema_path = os.path.join(output_path+fname[fname.index(os.sep)+1:]+".schema.json")
-                fh = open(fullPath, "a")
-                sch = open(schema_path, "w")
-                data(fhandle, fh, sch)
-                fh.close()
-        else:
-            fullPath = os.path.join(output_path+file_name[file_name.index(os.sep)+1:]+".json")
-            schema_path = os.path.join(output_path+file_name[file_name.index(os.sep)+1:]+".schema.json")
-            fh = open(fullPath, "a")
-            sch = open(schema_path, "w")
-            data(open(file_name), fh, sch)
-            fh.close()
+def main(filepath):
+    if "." not in filepath:
+        filepath += "*"
+    files = glob.glob(filepath)
+    for fname in files:
+        fhandle = open(fname)
+        fullPath = os.path.join(output_path+fname[fname.index(os.sep)+1:]+".json")
+        schema_path = os.path.join(output_path+fname[fname.index(os.sep)+1:]+".schema.json")
+        fh = open(fullPath, "a")
+        sch = open(schema_path, "w")
+        data(fhandle, fh, sch)
+        fh.close()
 
+def getArgs():
+    args = argparse.ArgumentParser()
+    args.add_argument('-f', '--file', type=str, help="Path to inupt file", default=input_path+"*")
+    return args.parse_args()
 
 if __name__ == '__main__':
     time1 = time.time()
-    main()
+    args = getArgs()
+    main(args.file)
     print(time.time()-time1)
