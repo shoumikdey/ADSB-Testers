@@ -9,6 +9,7 @@ cli_args = sys.argv[1:]
 file_name = ""
 input_path = "recordings"+os.sep
 output_path = "output_json"+os.sep
+inFile = os.getcwd()+os.sep+output_path
 schema = {
   "$schema": "http://json-schema.org/draft-04/schema#",
   "type": "object",
@@ -57,18 +58,19 @@ schema = {
 def data(fhandle, fh, sch_json):
     flag = False
     id = 0
-    lst = list()
+    lst = []
+    execTime = strftime("%Y-%m-%d %H:%M:%S", gmtime())
     for line in fhandle:
         line = line.rstrip()
         if line.startswith('@') and line.endswith(';') and (len(line) == 42 or len(line) == 28):
             id += 1
             flag = True
-            data = dict()
+            #data = dict()
             data = {
             "Timestamp":line[1:13],
             "ADSB_message":line[13:len(line)-1]
             }
-            data = {"id":id,"inFile":output_path, "execTime":strftime("%Y-%m-%d %H:%M:%S", gmtime()), "type" : "ADSB_in_mlat", "ADSB_mlat":line, "data":data}
+            data = {"id":id,"inFile":inFile, "execTime":execTime, "type" : "ADSB_in_mlat", "ADSB_mlat":line, "data":data}
             #print(json.dumps(data, indent=4, separators=(',',':')))#encode('utf-8'))
             lst.append(data.copy())
     #print(lst)
