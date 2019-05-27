@@ -18,7 +18,12 @@ def data(fhandle, fh):
         if line.startswith('@') and line.endswith(';') and (len(line) == 42 or len(line) == 28):
             id += 1
             flag = True
-            data = {"id":id, "type" : "ADSB_in_mlat", "ADSB_mlat":line, "Timestamp":line[1:13], "ADSB_message":line[13:len(line)-1]}
+            data = dict()
+            data = {
+            "Timestamp":line[1:13],
+            "ADSB_message":line[13:len(line)-1]
+            }
+            data = {"id":id, "type" : "ADSB_in_mlat", "ADSB_mlat":line, "data":data}
             #print(json.dumps(data, indent=4, separators=(',',':')))#encode('utf-8'))
             lst.append(data.copy())
     #print(lst)
