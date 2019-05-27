@@ -9,52 +9,8 @@ file_name = ""
 input_path = "recordings"+os.sep
 output_path = "output_json"+os.sep
 inFile = os.getcwd()+os.sep+output_path
-schema = {
-  "$schema": "http://json-schema.org/draft-04/schema#",
-  "type": "object",
-  "properties": {
-    "id": {
-      "type": "integer"
-    },
-    "inFile": {
-      "type": "string"
-    },
-    "execTime": {
-      "type": "string"
-    },
-    "type": {
-      "type": "string"
-    },
-    "ADSB_mlat": {
-      "type": "string"
-    },
-    "data": {
-      "type": "object",
-      "properties": {
-        "Timestamp": {
-          "type": "string"
-        },
-        "ADSB_message": {
-          "type": "string"
-        }
-      },
-      "required": [
-        "Timestamp",
-        "ADSB_message"
-      ]
-    }
-  },
-  "required": [
-    "id",
-    "inFile",
-    "execTime",
-    "type",
-    "ADSB_mlat",
-    "data"
-  ]
-}
 
-def data(fhandle, fh, sch_json):
+def data(fhandle, fh):
     flag = False
     id = 0
     lst = []
@@ -75,9 +31,9 @@ def data(fhandle, fh, sch_json):
     #print(lst)
     s=json.dumps(lst, indent=4, separators=(',',':'))
     fh.write(s)
-    jsonSchema = list()
-    jsonSchema.append(schema)
-    sch_json.write(json.dumps(jsonSchema, indent=4, separators=(',',':')))
+    #jsonSchema = list()
+    #sonSchema.append(schema)
+    #sch_json.write(json.dumps(jsonSchema, indent=4, separators=(',',':')))
             #fh.write('\n')
     if not flag:
         print("No dump1090 mlat format frame found")
@@ -89,10 +45,10 @@ def main(filepath):
     for fname in files:
         fhandle = open(fname)
         fullPath = os.path.join(output_path+fname[fname.index(os.sep)+1:]+".json")
-        schema_path = os.path.join(output_path+fname[fname.index(os.sep)+1:]+".schema.json")
+        #schema_path = os.path.join(output_path+fname[fname.index(os.sep)+1:]+".schema.json")
         fh = open(fullPath, "a")
-        sch = open(schema_path, "w")
-        data(fhandle, fh, sch)
+        #sch = open(schema_path, "w")
+        data(fhandle, fh)
         fh.close()
 
 def getArgs():
