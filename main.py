@@ -97,7 +97,7 @@ def main(filepath):
 
 def getArgs():
     args = argparse.ArgumentParser()
-    args.add_argument('-f', '--file', type=str, help="Path to inupt file", default=input_path+"*")
+    args.add_argument('-f', '--file', type=str, help="Path to input file", default=input_path+"*")
     return args.parse_args()
 
 if __name__ == '__main__':
