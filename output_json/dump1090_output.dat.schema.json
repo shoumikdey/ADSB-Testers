@@ -6,6 +6,12 @@
             "id":{
                 "type":"integer"
             },
+            "inFile":{
+                "type":"string"
+            },
+            "execTime":{
+                "type":"string"
+            },
             "type":{
                 "type":"string"
             },
@@ -30,6 +36,8 @@
         },
         "required":[
             "id",
+            "inFile",
+            "execTime",
             "type",
             "ADSB_mlat",
             "data"

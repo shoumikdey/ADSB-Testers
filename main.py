@@ -2,6 +2,7 @@ import json
 import glob
 import sys
 import os
+from time import gmtime, strftime
 import time
 
 cli_args = sys.argv[1:]
@@ -14,6 +15,12 @@ schema = {
   "properties": {
     "id": {
       "type": "integer"
+    },
+    "inFile": {
+      "type": "string"
+    },
+    "execTime": {
+      "type": "string"
     },
     "type": {
       "type": "string"
@@ -39,6 +46,8 @@ schema = {
   },
   "required": [
     "id",
+    "inFile",
+    "execTime",
     "type",
     "ADSB_mlat",
     "data"
@@ -59,7 +68,7 @@ def data(fhandle, fh, sch_json):
             "Timestamp":line[1:13],
             "ADSB_message":line[13:len(line)-1]
             }
-            data = {"id":id, "type" : "ADSB_in_mlat", "ADSB_mlat":line, "data":data}
+            data = {"id":id,"inFile":output_path, "execTime":strftime("%Y-%m-%d %H:%M:%S", gmtime()), "type" : "ADSB_in_mlat", "ADSB_mlat":line, "data":data}
             #print(json.dumps(data, indent=4, separators=(',',':')))#encode('utf-8'))
             lst.append(data.copy())
     #print(lst)
@@ -67,7 +76,6 @@ def data(fhandle, fh, sch_json):
     fh.write(s)
     jsonSchema = list()
     jsonSchema.append(schema)
-    print(jsonSchema)
     sch_json.write(json.dumps(jsonSchema, indent=4, separators=(',',':')))
             #fh.write('\n')
     if not flag:
