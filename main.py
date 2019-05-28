@@ -73,34 +73,36 @@ def main(filepath, output_path):
             try:
                 fh = open(fullPath, "w")
             except FileNotFoundError as file_error:
-                print("Destination folder not found")
-                break;
+                print("New folder created")
+                os.mkdir(output_path[:output_path.rindex(os.sep)])
+                fh = open(fullPath, "w")
+                #break;
             #sch = open(schema_path, "w")
             data(fhandle, fh, fname[fname.index(os.sep)+1:])
             fh.close()
     else:
-        while len(files) == 0:
-            print("No input file found in the input folder")
-            filepath = input("Enter the file path: ")
-            if "." not in filepath:
-                filepath += "*"
-            files = glob.glob(filepath)
-        #print(files)
-        if len(files) != 0:
-            for fname in files:
-                fhandle = open(fname)
-                fullPath = os.path.join(output_path+fname[fname.rindex(os.sep)+1:]+".json")
-
-                #schema_path = os.path.join(output_path+fname[fname.index(os.sep)+1:]+".schema.json")
-                try:
-                    fh = open(fullPath, "w")
-                except FileNotFoundError as file_error:
-                    print("Destination folder not found")
-                    break;
-                #sch = open(schema_path, "w")
-                data(fhandle, fh, fname[fname.index(os.sep)+1:])
-                fh.close()
-
+        # while len(files) == 0:
+        #     print("No input file found in the input folder")
+        #     filepath = input("Enter the file path: ")
+        #     if "." not in filepath:
+        #         filepath += "*"
+        #     files = glob.glob(filepath)
+        # #print(files)
+        # if len(files) != 0:
+        #     for fname in files:
+        #         fhandle = open(fname)
+        #         fullPath = os.path.join(output_path+fname[fname.rindex(os.sep)+1:]+".json")
+        #
+        #         #schema_path = os.path.join(output_path+fname[fname.index(os.sep)+1:]+".schema.json")
+        #         try:
+        #             fh = open(fullPath, "w")
+        #         except FileNotFoundError as file_error:
+        #             print("Destination folder not found")
+        #             break;
+        #         #sch = open(schema_path, "w")
+        #         data(fhandle, fh, fname[fname.index(os.sep)+1:])
+        #         fh.close()
+        print("No input file found in the specified input folder")
 
 def getArgs():
     args = argparse.ArgumentParser()
