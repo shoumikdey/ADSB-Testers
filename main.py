@@ -106,7 +106,7 @@ def getArgs():
     args = argparse.ArgumentParser()
     args.add_argument('-f', '--file', type=str, help="Path to input file", default=input_path+"*")
     args.add_argument('-o', '--output', type=str, help="Path to output file", default = "output_json"+os.sep)
-    args.add_argument('-on', '--oname', type=str, help="Custom output file name", default=None)
+    #args.add_argument('-on', '--oname', type=str, help="Custom output file name", default=None)
     return args.parse_args()
 
 if __name__ == '__main__':
