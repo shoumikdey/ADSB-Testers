@@ -10,26 +10,39 @@ input_path = "recordings"+os.sep
 output_path = "output_json"+os.sep
 inFile = os.getcwd()+os.sep+output_path
 
-def data(fhandle, fh):
+
+def data(fhandle, fh, fname):
+    meta = {"inputFile":fname,
+            "outputDir":"output_json"+os.sep,
+            "execTime":strftime("%Y-%m-%d %H:%M:%S", gmtime()),
+            "dataFormat":"beastmode"}
     flag = False
     id = 0
-    lst = []
-    execTime = strftime("%Y-%m-%d %H:%M:%S", gmtime())
+    lst = list()
+    # execTime = strftime("%Y-%m-%d %H:%M:%S", gmtime())
     for line in fhandle:
         line = line.rstrip()
         if line.startswith('@') and line.endswith(';') and (len(line) == 42 or len(line) == 28):
             id += 1
             flag = True
-            #data = dict()
+            data = dict()
             data = {
+            "id":id,
+            "ADSB_raw":line,
             "Timestamp":line[1:13],
             "ADSB_message":line[13:len(line)-1]
             }
-            data = {"id":id,"inFile":inFile, "execTime":execTime, "type" : "ADSB_in_mlat", "ADSB_mlat":line, "data":data}
-            #print(json.dumps(data, indent=4, separators=(',',':')))#encode('utf-8'))
-            lst.append(data.copy())
+            lst.append(data)
+    json_comp = {
+        "meta":meta,
+        "data":lst
+    }
+            # data = {"id":id,"inFile":inFile, "execTime":execTime, "type" : "ADSB_in_mlat", "ADSB_mlat":line, "data":data}
+            # #print(json.dumps(data, indent=4, separators=(',',':')))#encode('utf-8'))
+            # lst.append(data.copy())
+
     #print(lst)
-    s=json.dumps(lst, indent=4, separators=(',',':'))
+    s=json.dumps(json_comp, indent=4, separators=(',',':'))
     fh.write(s)
     #jsonSchema = list()
     #sonSchema.append(schema)
@@ -45,10 +58,11 @@ def main(filepath):
     for fname in files:
         fhandle = open(fname)
         fullPath = os.path.join(output_path+fname[fname.index(os.sep)+1:]+".json")
+
         #schema_path = os.path.join(output_path+fname[fname.index(os.sep)+1:]+".schema.json")
         fh = open(fullPath, "a")
         #sch = open(schema_path, "w")
-        data(fhandle, fh)
+        data(fhandle, fh, fname[fname.index(os.sep)+1:])
         fh.close()
 
 def getArgs():
