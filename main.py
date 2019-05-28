@@ -42,7 +42,7 @@ def data(fhandle, fh, fname):
             # lst.append(data.copy())
 
     #print(lst)
-    s=json.dumps(json_comp, indent=4, separators=(',',':'))
+    s=json.dumps(json_comp, indent=2, separators=(',',':'))
     fh.write(s)
     #jsonSchema = list()
     #sonSchema.append(schema)
