@@ -53,17 +53,21 @@ def data(fhandle, fh, fname):
     if not flag:
         print("No dump1090 mlat format frame found")
 
-def main(filepath, output_path, output_name):
+def main(filepath, output_path):
     if "." not in filepath:
         filepath += "*"
     files = glob.glob(filepath)
     if len(files) != 0:
         for fname in files:
             fhandle = open(fname)
-            if output_name == None:
+            #if output_name == None:
+            if (output_path.rindex(os.sep) + 1) == len(output_path):
                 fullPath = os.path.join(output_path+fname[fname.rindex(os.sep)+1:]+".json")
             else:
-                fullPath = os.path.join(output_path+output_name+".json")
+                fullPath = os.path.join(output_path+".json")
+            #print(len(output_path), output_path.rindex(os.sep))
+            #else:
+            #    fullPath = os.path.join(output_path+output_name+".json")
             #print(fullPath)
             #schema_path = os.path.join(output_path+fname[fname.index(os.sep)+1:]+".schema.json")
             try:
@@ -108,5 +112,5 @@ def getArgs():
 if __name__ == '__main__':
     time1 = time.time()
     args = getArgs()
-    main(args.file, args.output, args.oname)
+    main(args.file, args.output)
     print(time.time()-time1)
