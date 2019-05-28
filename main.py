@@ -7,8 +7,8 @@ import argparse
 
 file_name = ""
 input_path = "recordings"+os.sep
-output_path = "output_json"+os.sep
-inFile = os.getcwd()+os.sep+output_path
+#output_path = "output_json"+os.sep
+#inFile = os.getcwd()+os.sep+output_path
 
 
 def data(fhandle, fh, fname):
@@ -53,15 +53,15 @@ def data(fhandle, fh, fname):
     if not flag:
         print("No dump1090 mlat format frame found")
 
-def main(filepath):
+def main(filepath, output_path):
     if "." not in filepath:
         filepath += "*"
     files = glob.glob(filepath)
     if len(files) != 0:
         for fname in files:
             fhandle = open(fname)
-            fullPath = os.path.join(output_path+fname[fname.index(os.sep)+1:]+".json")
-
+            fullPath = os.path.join(output_path+fname[fname.rindex(os.sep)+1:]+".json")
+            print(fullPath)
             #schema_path = os.path.join(output_path+fname[fname.index(os.sep)+1:]+".schema.json")
             try:
                 fh = open(fullPath, "w")
@@ -72,15 +72,37 @@ def main(filepath):
             data(fhandle, fh, fname[fname.index(os.sep)+1:])
             fh.close()
     else:
-        print("No input file found in the input folder")
+        while len(files) == 0:
+            print("No input file found in the input folder")
+            filepath = input("Enter the file path: ")
+            if "." not in filepath:
+                filepath += "*"
+            files = glob.glob(filepath)
+        #print(files)
+        if len(files) != 0:
+            for fname in files:
+                fhandle = open(fname)
+                fullPath = os.path.join(output_path+fname[fname.rindex(os.sep)+1:]+".json")
+
+                #schema_path = os.path.join(output_path+fname[fname.index(os.sep)+1:]+".schema.json")
+                try:
+                    fh = open(fullPath, "w")
+                except FileNotFoundError as file_error:
+                    print("Destination folder not found")
+                    break;
+                #sch = open(schema_path, "w")
+                data(fhandle, fh, fname[fname.index(os.sep)+1:])
+                fh.close()
+
 
 def getArgs():
     args = argparse.ArgumentParser()
     args.add_argument('-f', '--file', type=str, help="Path to input file", default=input_path+"*")
+    args.add_argument('-o', '--output', type=str, help="Path to output file", default = "output_json"+os.sep)
     return args.parse_args()
 
 if __name__ == '__main__':
     time1 = time.time()
     args = getArgs()
-    main(args.file)
+    main(args.file, args.output)
     print(time.time()-time1)
