@@ -53,15 +53,18 @@ def data(fhandle, fh, fname):
     if not flag:
         print("No dump1090 mlat format frame found")
 
-def main(filepath, output_path):
+def main(filepath, output_path, output_name):
     if "." not in filepath:
         filepath += "*"
     files = glob.glob(filepath)
     if len(files) != 0:
         for fname in files:
             fhandle = open(fname)
-            fullPath = os.path.join(output_path+fname[fname.rindex(os.sep)+1:]+".json")
-            print(fullPath)
+            if output_name == None:
+                fullPath = os.path.join(output_path+fname[fname.rindex(os.sep)+1:]+".json")
+            else:
+                fullPath = os.path.join(output_path+output_name+".json")
+            #print(fullPath)
             #schema_path = os.path.join(output_path+fname[fname.index(os.sep)+1:]+".schema.json")
             try:
                 fh = open(fullPath, "w")
@@ -99,10 +102,11 @@ def getArgs():
     args = argparse.ArgumentParser()
     args.add_argument('-f', '--file', type=str, help="Path to input file", default=input_path+"*")
     args.add_argument('-o', '--output', type=str, help="Path to output file", default = "output_json"+os.sep)
+    args.add_argument('-on', '--oname', type=str, help="Custom output file name", default=None)
     return args.parse_args()
 
 if __name__ == '__main__':
     time1 = time.time()
     args = getArgs()
-    main(args.file, args.output)
+    main(args.file, args.output, args.oname)
     print(time.time()-time1)
