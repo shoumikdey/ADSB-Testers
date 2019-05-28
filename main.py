@@ -12,9 +12,14 @@ input_path = "recordings"+os.sep
 
 
 def data(fhandle, fh, fname):
-    meta = {"inputFile":fname,
-            "execTime":strftime("%Y-%m-%d %H:%M:%S", gmtime()),
-            "dataFormat":""}
+    if ".json" not in fname:
+        meta = {"inputFile":fname+".json",
+                "execTime":strftime("%Y-%m-%d %H:%M:%S", gmtime()),
+                "dataFormat":""}
+    else:
+        meta = {"inputFile":fname,
+                "execTime":strftime("%Y-%m-%d %H:%M:%S", gmtime()),
+                "dataFormat":""}
     flag = False
     id = 0
     lst = list()
@@ -78,7 +83,11 @@ def main(filepath, output_path):
                 fh = open(fullPath, "w")
                 #break;
             #sch = open(schema_path, "w")
-            data(fhandle, fh, fname[fname.index(os.sep)+1:])
+            if (output_path.rindex(os.sep)+1) == len(output_path):
+                fileName = fname[fname.rindex(os.sep)+1:]
+            else:
+                fileName = output_path[output_path.rindex(os.sep)+1:]
+            data(fhandle, fh, fileName)
             fh.close()
     else:
         # while len(files) == 0:
