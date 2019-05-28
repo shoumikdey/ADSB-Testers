@@ -13,9 +13,8 @@ inFile = os.getcwd()+os.sep+output_path
 
 def data(fhandle, fh, fname):
     meta = {"inputFile":fname,
-            "outputDir":"output_json"+os.sep,
             "execTime":strftime("%Y-%m-%d %H:%M:%S", gmtime()),
-            "dataFormat":"beastmode"}
+            "dataFormat":""}
     flag = False
     id = 0
     lst = list()
@@ -23,7 +22,7 @@ def data(fhandle, fh, fname):
     for line in fhandle:
         line = line.rstrip()
         if line.startswith('@') and line.endswith(';') and (len(line) == 42 or len(line) == 28):
-            id += 1
+            meta["dataFormat"] = "avr"
             flag = True
             data = dict()
             data = {
@@ -33,6 +32,8 @@ def data(fhandle, fh, fname):
             "ADSB_message":line[13:len(line)-1]
             }
             lst.append(data)
+            id += 1
+
     json_comp = {
         "meta":meta,
         "data":lst
@@ -44,6 +45,7 @@ def data(fhandle, fh, fname):
     #print(lst)
     s=json.dumps(json_comp, indent=2, separators=(',',':'))
     fh.write(s)
+
     #jsonSchema = list()
     #sonSchema.append(schema)
     #sch_json.write(json.dumps(jsonSchema, indent=4, separators=(',',':')))
@@ -55,15 +57,22 @@ def main(filepath):
     if "." not in filepath:
         filepath += "*"
     files = glob.glob(filepath)
-    for fname in files:
-        fhandle = open(fname)
-        fullPath = os.path.join(output_path+fname[fname.index(os.sep)+1:]+".json")
+    if len(files) != 0:
+        for fname in files:
+            fhandle = open(fname)
+            fullPath = os.path.join(output_path+fname[fname.index(os.sep)+1:]+".json")
 
-        #schema_path = os.path.join(output_path+fname[fname.index(os.sep)+1:]+".schema.json")
-        fh = open(fullPath, "a")
-        #sch = open(schema_path, "w")
-        data(fhandle, fh, fname[fname.index(os.sep)+1:])
-        fh.close()
+            #schema_path = os.path.join(output_path+fname[fname.index(os.sep)+1:]+".schema.json")
+            try:
+                fh = open(fullPath, "w")
+            except FileNotFoundError as file_error:
+                print("Destination folder not found")
+                break;
+            #sch = open(schema_path, "w")
+            data(fhandle, fh, fname[fname.index(os.sep)+1:])
+            fh.close()
+    else:
+        print("No input file found in the input folder")
 
 def getArgs():
     args = argparse.ArgumentParser()
