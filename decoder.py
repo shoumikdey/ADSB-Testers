@@ -130,7 +130,7 @@ def main(inp_file):
         for fname in files:
             fhandle = open(fname)
             if (output_path.rindex(os.sep) + 1) == len(output_path):
-                fullPath = os.path.join(output_path+fname[fname.rindex(os.sep)+1:]+".json")
+                fullPath = os.path.join(output_path+fname[fname.rindex(os.sep)+1:])
             else:
                 fullPath = os.path.join(output_path+".json")
             try:
