@@ -2,6 +2,8 @@ import json
 import argparse
 import glob
 import os
+from identifiers import *
+from transformers import *
 
 input_path = "output_json"+os.sep
 output_path = "decoder_json"+os.sep
@@ -69,57 +71,88 @@ def cprLong(frame):
     bin_frame = hexToDec(frame)
     return bin_frame[71:88]
 
+# json_frame = {
+#     "id":frames['id'],
+#     "ADSB":frames['ADSB_message'],
+#     "SamplePos":frames['Samplepos'],
+#     "df":None,
+#     "tc":None,
+#     "capability":None,
+#     "icao":None,
+#     "parity":None,
+#     "surv_stat":None,
+#     "NICsb":None,
+#     "alt": None,
+#     "Time":None,
+#     "cpr_flag":None,
+#     "cprLat":None,
+#     "cprLong":None
+# }
 
 def decode(file_obj, fileOut_obj, fileName):
     pos_data = list()
     data = json.load(file_obj)
     for frames in data["data"]:
-        each_pos = dict()
-        frames['Timestamp'] = int(frames['Timestamp'], 16) * 6
-        frames['Samplepos'] = frames.pop('Timestamp')
-        if df(frames['ADSB_message']) == 17:
-            each_pos = {
-                "id":frames['id'],
-                "ADSB":frames['ADSB_message'],
-                "SamplePos":frames['Samplepos'],
-                "df":df(frames['ADSB_message']),
-                "tc":getTC(frames['ADSB_message']),
-                "capability":capability(frames['ADSB_message']),
-                "icao":icao(frames['ADSB_message']),
-                "parity":parity(frames['ADSB_message']),
-                "surv_stat":surveillance_status(frames['ADSB_message']),
-                "NICsb":NICsb(frames['ADSB_message']),
-                "alt": Altitude(frames['ADSB_message']),
-                "Time":Time(frames['ADSB_message']),
-                "cpr_flag":CPR(frames['ADSB_message']),
-                "cprLat":cprLat(frames['ADSB_message']),
-                "cprLong":cprLong(frames['ADSB_message'])
-            }
-        else:
-            each_pos = {
-                "id":frames['id'],
-                "ADSB":frames['ADSB_message'],
-                "SamplePos":frames['Samplepos'],
-                "df":None,
-                "tc":None,
-                "capability":None,
-                "icao":None,
-                "parity":None,
-                "surv_stat":None,
-                "NICsb":None,
-                "alt": None,
-                "Time":None,
-                "cpr_flag":None,
-                "cprLat":None,
-                "cprLong":None
-            }
-        pos_data.append(each_pos)
+        # each_pos = dict()
+        # frames['Timestamp'] = int(frames['Timestamp'], 16) * 6
+        # frames['Samplepos'] = frames.pop('Timestamp')
+        # if df(frames['ADSB_message']) == 17:
+        #     each_pos = {
+        #         "id":frames['id'],
+        #         "ADSB":frames['ADSB_message'],
+        #         "SamplePos":frames['Samplepos'],
+        #         "df":df(frames['ADSB_message']),
+        #         "tc":getTC(frames['ADSB_message']),
+        #         "capability":capability(frames['ADSB_message']),
+        #         "icao":icao(frames['ADSB_message']),
+        #         "parity":parity(frames['ADSB_message']),
+        #         "surv_stat":surveillance_status(frames['ADSB_message']),
+        #         "NICsb":NICsb(frames['ADSB_message']),
+        #         "alt": Altitude(frames['ADSB_message']),
+        #         "Time":Time(frames['ADSB_message']),
+        #         "cpr_flag":CPR(frames['ADSB_message']),
+        #         "cprLat":cprLat(frames['ADSB_message']),
+        #         "cprLong":cprLong(frames['ADSB_message'])
+        #     }
+        # else:
+        #     each_pos = {
+        #         "id":frames['id'],
+        #         "ADSB":frames['ADSB_message'],
+        #         "SamplePos":frames['Samplepos'],
+        #         "df":None,
+        #         "tc":None,
+        #         "capability":None,
+        #         "icao":None,
+        #         "parity":None,
+        #         "surv_stat":None,
+        #         "NICsb":None,
+        #         "alt": None,
+        #         "Time":None,
+        #         "cpr_flag":None,
+        #         "cprLat":None,
+        #         "cprLong":None
+        #     }
+        if identifier1(df(frames['ADSB_message']), getTC(frames['ADSB_message'])):
+            transformer1(frames['ADSB_message'], data, df(frames['ADSB_message']), getTC(frames['ADSB_message']))
+
+        if identifier2(df(frames['ADSB_message']), getTC(frames['ADSB_message'])):
+            transformer2(frames['ADSB_message'], data, df(frames['ADSB_message']), getTC(frames['ADSB_message']))
+
+        if identifier3(df(frames['ADSB_message']), getTC(frames['ADSB_message'])):
+            transformer3(frames['ADSB_message'], data, df(frames['ADSB_message']), getTC(frames['ADSB_message']))
+
+        if identifier4(df(frames['ADSB_message']), getTC(frames['ADSB_message'])):
+            transformer4(frames['ADSB_message'], data, df(frames['ADSB_message']), getTC(frames['ADSB_message']))
+
+        if identifier5(df(frames['ADSB_message']), getTC(frames['ADSB_message'])):
+            transformer5(frames['ADSB_message'], data, df(frames['ADSB_message']), getTC(frames['ADSB_message']))
+        #pos_data.append(each_pos)
     json_data = {
     "meta":"",
     "data":pos_data
     }
-    s=json.dumps(json_data, indent=2, separators=(',',':'))
-    fileOut_obj.write(s)
+    #s=json.dumps(json_data, indent=2, separators=(',',':'))
+    #fileOut_obj.write(s)
 
 def main(inp_file):
     if "." not in inp_file and (inp_file.rindex(os.sep)+1 == len(inp_file)):
