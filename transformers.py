@@ -13,6 +13,7 @@ def transformer2(msg, json_frame, df, tc):
 def transformer3(msg, json_frame, df, tc):
     #Airborne Position
     print(msg, "Airborne Position")
+    print(json_frame)
 
 def transformer4(msg, json_frame, df, tc):
     #Airborne velocity
