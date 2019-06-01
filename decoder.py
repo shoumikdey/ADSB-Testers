@@ -74,7 +74,7 @@ def cprLong(frame):
 json_frame = {
     "meta":{
         "gs_lat":"",
-        "gs_lomg":"",
+        "gs_long":"",
         "gs_alt":"",
     },
     "data":{
@@ -187,18 +187,25 @@ def decode(file_obj, fileOut_obj, fileName):
         #     }
         if identifier1(df(frames['ADSB_message']), getTC(frames['ADSB_message'])):
             transformer1(frames['ADSB_message'], json_frame, df(frames['ADSB_message']), getTC(frames['ADSB_message']))
-
+            continue
         if identifier2(df(frames['ADSB_message']), getTC(frames['ADSB_message'])):
             transformer2(frames['ADSB_message'], json_frame, df(frames['ADSB_message']), getTC(frames['ADSB_message']))
-
+            continue
         if identifier3(df(frames['ADSB_message']), getTC(frames['ADSB_message'])):
             transformer3(frames['ADSB_message'], json_frame, df(frames['ADSB_message']), getTC(frames['ADSB_message']))
-
+            continue
         if identifier4(df(frames['ADSB_message']), getTC(frames['ADSB_message'])):
             transformer4(frames['ADSB_message'], json_frame, df(frames['ADSB_message']), getTC(frames['ADSB_message']))
-
+            continue
         if identifier5(df(frames['ADSB_message']), getTC(frames['ADSB_message'])):
             transformer5(frames['ADSB_message'], json_frame, df(frames['ADSB_message']), getTC(frames['ADSB_message']))
+            continue
+        if identifier6(df(frames['ADSB_message']), getTC(frames['ADSB_message'])):
+            transformer6(frames['ADSB_message'], json_frame, df(frames['ADSB_message']), getTC(frames['ADSB_message']))
+            continue
+        if identifier7(df(frames['ADSB_message']), getTC(frames['ADSB_message'])):
+            transformer7(frames['ADSB_message'], json_frame, df(frames['ADSB_message']), getTC(frames['ADSB_message']))
+            
         #pos_data.append(each_pos)
     json_data = {
     "meta":"",

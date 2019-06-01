@@ -16,14 +16,14 @@ def identifier4(df, tc):
     if 17 <= df <= 18 and tc == 19:
         return True
 
-def identifier4(df, tc):
+def identifier5(df, tc):
     if 17 <= df <= 18 and 20 <= tc <= 22:
         return True
 
-def identifier4(df, tc):
+def identifier6(df, tc):
     if 17 <= df <= 18 and tc == 31:
         return True
 
-def identifier5(df, tc):
+def identifier7(df, tc):
     if 20 <= df <= 21:
         return True
