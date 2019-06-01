@@ -71,23 +71,70 @@ def cprLong(frame):
     bin_frame = hexToDec(frame)
     return bin_frame[71:88]
 
-# json_frame = {
-#     "id":frames['id'],
-#     "ADSB":frames['ADSB_message'],
-#     "SamplePos":frames['Samplepos'],
-#     "df":None,
-#     "tc":None,
-#     "capability":None,
-#     "icao":None,
-#     "parity":None,
-#     "surv_stat":None,
-#     "NICsb":None,
-#     "alt": None,
-#     "Time":None,
-#     "cpr_flag":None,
-#     "cprLat":None,
-#     "cprLong":None
-# }
+json_frame = {
+    "meta":{},
+    "data":{
+        "id":None,
+        "ADSB_raw"
+        "ADSB_msg":None,
+        "Timestamp":None,
+        "SamplePos":None,
+        "df":None,
+        "tc":None,
+        "capability":None,
+        "icao":None,
+        "parity":None,
+        "surv_stat":None,
+        "NICsb":None,
+        "alt": None,
+        "Time":None,
+        "cpr_flag":None,
+        "cprLat":None,
+        "cprLong":None,
+        #Airborne velocity Subtype 1
+        "Subtype":None,
+        "IC":None,
+        "RESV_A":None,
+        "NAC":None,
+        "S_ew":None,
+        "V_ew":None,
+        "S_ns":None,
+        "V_ns":None,
+        "VrSrc":None,
+        "S_vr":None,
+        "Vr":None,
+        "RESV_B":None,
+        "S_Dif":None,
+        "Dif":None,
+        #Subtype 3
+        "S_hdg":None,
+        "Hdg":None,
+        "AS_t":None,
+        "AS":None,
+        #Operation status
+        "stype_code":None,
+        "sccc":None,
+        "lw_codes":None,
+        "op_mc":None,
+        "ver":None,
+        "NIC":None,
+        "NACp":None,
+        "SIL":None,
+        "HRD":None,
+        #version 2 Needs more understanding
+        #Enhanced MODE-S
+        "bds_1":None,
+        "bds_2":None,
+        "mcp_alt":None,
+        "fms_alt":None,
+        "baro_set":None,
+        "VNAV_state":None,
+        "Alt_hold_state":None,
+        "Apr_state":None,
+        "tgt_alt_source":None,
+
+    }
+}
 
 def decode(file_obj, fileOut_obj, fileName):
     pos_data = list()
