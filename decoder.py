@@ -2,8 +2,8 @@ import json
 import argparse
 import glob
 import os
-from identifiers import *
-from transformers import *
+from modules.identifiers import *
+from modules.transformers import *
 
 input_path = "output_json"+os.sep
 output_path = "decoder_json"+os.sep
@@ -205,7 +205,7 @@ def decode(file_obj, fileOut_obj, fileName):
             continue
         if identifier7(df(frames['ADSB_message']), getTC(frames['ADSB_message'])):
             transformer7(frames['ADSB_message'], json_frame, df(frames['ADSB_message']), getTC(frames['ADSB_message']))
-            
+
         #pos_data.append(each_pos)
     json_data = {
     "meta":"",
