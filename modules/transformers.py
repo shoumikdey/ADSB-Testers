@@ -29,11 +29,17 @@ def transformer3(msg, json_frame, df, tc):
         else:
             icao_last_seen[getICAO(msg)] = [msg, ""]
     elif isEven:
-        print("Msg", msg, "Previous odd msg", icao_last_seen[getICAO(msg)][0])
-        icao_last_seen[getICAO(msg)][1] = msg
+        if icao_last_seen[getICAO(msg)][0] != "":
+            print("Msg", msg, "Previous odd msg", icao_last_seen[getICAO(msg)][0])
+            icao_last_seen[getICAO(msg)][1] = msg
+        else:
+            print("No previous odd msg found")
     elif not isEven:
-        print("Msg", msg, "Previous even msg", icao_last_seen[getICAO(msg)][1])
-        icao_last_seen[getICAO(msg)][0] = msg
+        if icao_last_seen[getICAO(msg)][1] != "":
+            print("Msg", msg, "Previous even msg", icao_last_seen[getICAO(msg)][1])
+            icao_last_seen[getICAO(msg)][0] = msg
+        else:
+            print("No previous even msg found")
     #print(json.dumps(icao_last_seen, indent=2))
     #print(json_frame)
 
