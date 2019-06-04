@@ -136,6 +136,9 @@ json_frame = {
         "Alt_hold_state":None,
         "Apr_state":None,
         "tgt_alt_source":None,
+        "prev_lat":None,
+        "prev_long":None,
+        "isLocalUni":None #If the location is calculated is locally unambiguous (1 frame method)
 
     }
 }
