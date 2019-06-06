@@ -19,8 +19,8 @@ def transformer2(msg, json_frame, df, tc):
 def transformer3(msg, json_frame, df, tc):
     #Airborne Position
     isEven = False
-    print(msg, "Airborne Position", df, tc, hexToBin(msg)[54])
-    if hexToBin(msg)[54] == "0":
+    print(msg, "Airborne Position", df, tc, hexToBin(msg)[53])
+    if hexToBin(msg)[53] == "0":
         isEven = True
         #print("hhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhh")
     if getICAO(msg) not in icao_last_seen:

@@ -149,45 +149,6 @@ def decode(file_obj, fileOut_obj, fileName):
     #json_frame['meta'] = data['meta']
     json_frame['meta'].update(data['meta'])
     for frames in data["data"]:
-        # each_pos = dict()
-        # frames['Timestamp'] = int(frames['Timestamp'], 16) * 6
-        # frames['Samplepos'] = frames.pop('Timestamp')
-        # if df(frames['ADSB_message']) == 17:
-        #     each_pos = {
-        #         "id":frames['id'],
-        #         "ADSB":frames['ADSB_message'],
-        #         "SamplePos":frames['Samplepos'],
-        #         "df":df(frames['ADSB_message']),
-        #         "tc":getTC(frames['ADSB_message']),
-        #         "capability":capability(frames['ADSB_message']),
-        #         "icao":icao(frames['ADSB_message']),
-        #         "parity":parity(frames['ADSB_message']),
-        #         "surv_stat":surveillance_status(frames['ADSB_message']),
-        #         "NICsb":NICsb(frames['ADSB_message']),
-        #         "alt": Altitude(frames['ADSB_message']),
-        #         "Time":Time(frames['ADSB_message']),
-        #         "cpr_flag":CPR(frames['ADSB_message']),
-        #         "cprLat":cprLat(frames['ADSB_message']),
-        #         "cprLong":cprLong(frames['ADSB_message'])
-        #     }
-        # else:
-        #     each_pos = {
-        #         "id":frames['id'],
-        #         "ADSB":frames['ADSB_message'],
-        #         "SamplePos":frames['Samplepos'],
-        #         "df":None,
-        #         "tc":None,
-        #         "capability":None,
-        #         "icao":None,
-        #         "parity":None,
-        #         "surv_stat":None,
-        #         "NICsb":None,
-        #         "alt": None,
-        #         "Time":None,
-        #         "cpr_flag":None,
-        #         "cprLat":None,
-        #         "cprLong":None
-        #     }
         if identifier1(df(frames['ADSB_message']), getTC(frames['ADSB_message'])):
             transformer1(frames['ADSB_message'], json_frame, df(frames['ADSB_message']), getTC(frames['ADSB_message']))
             continue
