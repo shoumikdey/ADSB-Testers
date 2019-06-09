@@ -29,12 +29,15 @@ def transformer3(msg, json_frame, df, tc):
             icao_last_seen[getICAO(msg)] = ["",msg]
         else:
             icao_last_seen[getICAO(msg)] = [msg, ""]
-    elif isEven:
+    if isEven:
         if icao_last_seen[getICAO(msg)][0] != "":
             latitude, longitude, altitude = main_pos(icao_last_seen[getICAO(msg)][0], msg)
             print("Msg", msg, "Previous odd msg", icao_last_seen[getICAO(msg)][0], "latitide:", latitude, "longitude:",longitude, "altitude:",altitude)
             icao_last_seen[getICAO(msg)][1] = msg
         else:
+            latitude = None
+            longitude = None
+            altitude = None
             print("No previous odd msg found")
     elif not isEven:
         if icao_last_seen[getICAO(msg)][1] != "":
@@ -46,6 +49,9 @@ def transformer3(msg, json_frame, df, tc):
             longitude = None
             altitude = None
             print("No previous even msg found")
+
+    json_frame['ADSB_msg'], json_frame['latitude'], json_frame['longitude'], json_frame['altitude'] = msg, latitude, longitude, altitude
+    return json_frame
     #print(json.dumps(icao_last_seen, indent=2))
     #print(json_frame)
 

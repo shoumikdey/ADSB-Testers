@@ -81,7 +81,7 @@ def const_frame():
         },
         "data":{
             "id":None,
-            "ADSB_raw"
+            "ADSB_raw":None,
             "ADSB_msg":None,
             "Timestamp":None,
             "SamplePos":None,
@@ -97,6 +97,9 @@ def const_frame():
             "cpr_flag":None,
             "cprLat":None,
             "cprLong":None,
+            "latitude":None,
+            "longitude":None,
+            "altitude":None,
             #Airborne velocity Subtype 1data
             "Subtype":None,
             "IC":None,
@@ -147,39 +150,42 @@ def const_frame():
     return json_frame
 
 def decode(file_obj, fileOut_obj, fileName):
-    # pos_data = list()
+    pos_data = list()
     data = json.load(file_obj)
     #json_frame['meta'] = data['meta']
     #json_frame['meta'].update(data['meta'])
     for frames in data["data"]:
         if identifier1(df(frames['ADSB_message']), getTC(frames['ADSB_message'])):
-            transformer1(frames['ADSB_message'], const_frame(), df(frames['ADSB_message']), getTC(frames['ADSB_message']))
+            transformer1(frames['ADSB_message'], const_frame()['data'], df(frames['ADSB_message']), getTC(frames['ADSB_message']))
             continue
         if identifier2(df(frames['ADSB_message']), getTC(frames['ADSB_message'])):
-            transformer2(frames['ADSB_message'], const_frame(), df(frames['ADSB_message']), getTC(frames['ADSB_message']))
+            transformer2(frames['ADSB_message'], const_frame()['data'], df(frames['ADSB_message']), getTC(frames['ADSB_message']))
             continue
         if identifier3(df(frames['ADSB_message']), getTC(frames['ADSB_message'])):
-            transformer3(frames['ADSB_message'], const_frame(), df(frames['ADSB_message']), getTC(frames['ADSB_message']))
+            pos_data.append(transformer3(frames['ADSB_message'], const_frame()['data'], df(frames['ADSB_message']), getTC(frames['ADSB_message'])))
             continue
         if identifier4(df(frames['ADSB_message']), getTC(frames['ADSB_message'])):
-            transformer4(frames['ADSB_message'], const_frame(), df(frames['ADSB_message']), getTC(frames['ADSB_message']))
+            transformer4(frames['ADSB_message'], const_frame()['data'], df(frames['ADSB_message']), getTC(frames['ADSB_message']))
             continue
         if identifier5(df(frames['ADSB_message']), getTC(frames['ADSB_message'])):
-            transformer5(frames['ADSB_message'], const_frame(), df(frames['ADSB_message']), getTC(frames['ADSB_message']))
+            transformer5(frames['ADSB_message'], const_frame()['data'], df(frames['ADSB_message']), getTC(frames['ADSB_message']))
             continue
         if identifier6(df(frames['ADSB_message']), getTC(frames['ADSB_message'])):
-            transformer6(frames['ADSB_message'], const_frame(), df(frames['ADSB_message']), getTC(frames['ADSB_message']))
+            transformer6(frames['ADSB_message'], const_frame()['data'], df(frames['ADSB_message']), getTC(frames['ADSB_message']))
             continue
         if identifier7(df(frames['ADSB_message']), getTC(frames['ADSB_message'])):
-            transformer7(frames['ADSB_message'], const_frame(), df(frames['ADSB_message']), getTC(frames['ADSB_message']))
+            transformer7(frames['ADSB_message'], const_frame()['data'], df(frames['ADSB_message']), getTC(frames['ADSB_message']))
 
         #pos_data.append(each_pos)
-    # json_data = {
-    # "meta":"",
-    # "data":pos_data
-    # }
-    #s=json.dumps(json_data, indent=2, separators=(',',':'))
-    #fileOut_obj.write(s)
+    json_data = {
+    "meta":{},
+    "data":pos_data
+    }
+    json_data['meta'].update(data['meta'])
+    jdata = const_frame()
+    json_data['meta'].update(jdata['meta'])
+    s=json.dumps(json_data, indent=2, separators=(',',':'))
+    fileOut_obj.write(s)
 
 def main(inp_file):
     if "." not in inp_file and (inp_file.rindex(os.sep)+1 == len(inp_file)):
