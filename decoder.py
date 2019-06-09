@@ -80,10 +80,10 @@ def const_frame():
             "gs_alt":"",
         },
         "data":{
-            "id":None,
-            "ADSB_raw":None,
-            "ADSB_msg":None,
-            "Timestamp":None,
+            # "id":None,
+            # "ADSB_raw":None,
+            # "ADSB_msg":None,
+            # "Timestamp":None,
             "SamplePos":None,
             "df":None,
             "tc":None,
@@ -155,6 +155,7 @@ def decode(file_obj, fileOut_obj, fileName):
     #json_frame['meta'] = data['meta']
     #json_frame['meta'].update(data['meta'])
     for frames in data["data"]:
+        x = list()
         if identifier1(df(frames['ADSB_message']), getTC(frames['ADSB_message'])):
             transformer1(frames['ADSB_message'], const_frame()['data'], df(frames['ADSB_message']), getTC(frames['ADSB_message']))
             continue
@@ -162,7 +163,7 @@ def decode(file_obj, fileOut_obj, fileName):
             transformer2(frames['ADSB_message'], const_frame()['data'], df(frames['ADSB_message']), getTC(frames['ADSB_message']))
             continue
         if identifier3(df(frames['ADSB_message']), getTC(frames['ADSB_message'])):
-            pos_data.append(transformer3(frames['ADSB_message'], const_frame()['data'], df(frames['ADSB_message']), getTC(frames['ADSB_message'])))
+            pos_data.append({**frames, **transformer3(frames['ADSB_message'], const_frame()['data'], df(frames['ADSB_message']), getTC(frames['ADSB_message']))})
             continue
         if identifier4(df(frames['ADSB_message']), getTC(frames['ADSB_message'])):
             transformer4(frames['ADSB_message'], const_frame()['data'], df(frames['ADSB_message']), getTC(frames['ADSB_message']))
