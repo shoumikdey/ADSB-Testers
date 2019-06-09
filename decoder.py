@@ -71,110 +71,113 @@ def cprLong(frame):
     bin_frame = hexToDec(frame)
     return bin_frame[71:88]
 
-json_frame = {
-    "meta":{
-        "gs_lat":"",
-        "gs_long":"",
-        "gs_alt":"",
-    },
-    "data":{
-        "id":None,
-        "ADSB_raw"
-        "ADSB_msg":None,
-        "Timestamp":None,
-        "SamplePos":None,
-        "df":None,
-        "tc":None,
-        "capability":None,
-        "icao":None,
-        "parity":None,
-        "surv_stat":None,
-        "NICsb":None,
-        "alt": None,
-        "Time":None,
-        "cpr_flag":None,
-        "cprLat":None,
-        "cprLong":None,
-        #Airborne velocity Subtype 1data
-        "Subtype":None,
-        "IC":None,
-        "RESV_A":None,
-        "NAC":None,
-        "S_ew":None,
-        "V_ew":None,
-        "S_ns":None,
-        "V_ns":None,
-        "VrSrc":None,
-        "S_vr":None,
-        "Vr":None,
-        "RESV_B":None,
-        "S_Dif":None,
-        "Dif":None,
-        #Subtype 3
-        "S_hdg":None,
-        "Hdg":None,
-        "AS_t":None,
-        "AS":None,
-        #Operation status
-        "stype_code":None,
-        "sccc":None,
-        "lw_codes":None,
-        "op_mc":None,
-        "ver":None,
-        "NIC":None,
-        "NACp":None,
-        "SIL":None,
-        "HRD":None,
-        #version 2 Needs more understanding
-        #Enhanced MODE-S
-        "bds_1":None,
-        "bds_2":None,
-        "mcp_alt":None,
-        "fms_alt":None,
-        "baro_set":None,
-        "VNAV_state":None,
-        "Alt_hold_state":None,
-        "Apr_state":None,
-        "tgt_alt_source":None,
-        "prev_lat":None,
-        "prev_long":None,
-        "isLocalUni":None #If the location is calculated is locally unambiguous (1 frame method)
+def const_frame():
 
+    json_frame = {
+        "meta":{
+            "gs_lat":"",
+            "gs_long":"",
+            "gs_alt":"",
+        },
+        "data":{
+            "id":None,
+            "ADSB_raw"
+            "ADSB_msg":None,
+            "Timestamp":None,
+            "SamplePos":None,
+            "df":None,
+            "tc":None,
+            "capability":None,
+            "icao":None,
+            "parity":None,
+            "surv_stat":None,
+            "NICsb":None,
+            "alt": None,
+            "Time":None,
+            "cpr_flag":None,
+            "cprLat":None,
+            "cprLong":None,
+            #Airborne velocity Subtype 1data
+            "Subtype":None,
+            "IC":None,
+            "RESV_A":None,
+            "NAC":None,
+            "S_ew":None,
+            "V_ew":None,
+            "S_ns":None,
+            "V_ns":None,
+            "VrSrc":None,
+            "S_vr":None,
+            "Vr":None,
+            "RESV_B":None,
+            "S_Dif":None,
+            "Dif":None,
+            #Subtype 3
+            "S_hdg":None,
+            "Hdg":None,
+            "AS_t":None,
+            "AS":None,
+            #Operation status
+            "stype_code":None,
+            "sccc":None,
+            "lw_codes":None,
+            "op_mc":None,
+            "ver":None,
+            "NIC":None,
+            "NACp":None,
+            "SIL":None,
+            "HRD":None,
+            #version 2 Needs more understanding
+            #Enhanced MODE-S
+            "bds_1":None,
+            "bds_2":None,
+            "mcp_alt":None,
+            "fms_alt":None,
+            "baro_set":None,
+            "VNAV_state":None,
+            "Alt_hold_state":None,
+            "Apr_state":None,
+            "tgt_alt_source":None,
+            "prev_lat":None,
+            "prev_long":None,
+            "isLocalUni":None #If the location is calculated is locally unambiguous (1 frame method)
+
+        }
     }
-}
+    return json_frame
 
 def decode(file_obj, fileOut_obj, fileName):
-    pos_data = list()
+    # pos_data = list()
     data = json.load(file_obj)
     #json_frame['meta'] = data['meta']
-    json_frame['meta'].update(data['meta'])
+    #json_frame['meta'].update(data['meta'])
     for frames in data["data"]:
         if identifier1(df(frames['ADSB_message']), getTC(frames['ADSB_message'])):
-            transformer1(frames['ADSB_message'], json_frame, df(frames['ADSB_message']), getTC(frames['ADSB_message']))
+            transformer1(frames['ADSB_message'], const_frame(), df(frames['ADSB_message']), getTC(frames['ADSB_message']))
             continue
         if identifier2(df(frames['ADSB_message']), getTC(frames['ADSB_message'])):
-            transformer2(frames['ADSB_message'], json_frame, df(frames['ADSB_message']), getTC(frames['ADSB_message']))
+            transformer2(frames['ADSB_message'], const_frame(), df(frames['ADSB_message']), getTC(frames['ADSB_message']))
             continue
         if identifier3(df(frames['ADSB_message']), getTC(frames['ADSB_message'])):
-            transformer3(frames['ADSB_message'], json_frame, df(frames['ADSB_message']), getTC(frames['ADSB_message']))
+            transformer3(frames['ADSB_message'], const_frame(), df(frames['ADSB_message']), getTC(frames['ADSB_message']))
             continue
         if identifier4(df(frames['ADSB_message']), getTC(frames['ADSB_message'])):
-            transformer4(frames['ADSB_message'], json_frame, df(frames['ADSB_message']), getTC(frames['ADSB_message']))
+            transformer4(frames['ADSB_message'], const_frame(), df(frames['ADSB_message']), getTC(frames['ADSB_message']))
             continue
         if identifier5(df(frames['ADSB_message']), getTC(frames['ADSB_message'])):
-            transformer5(frames['ADSB_message'], json_frame, df(frames['ADSB_message']), getTC(frames['ADSB_message']))
+            transformer5(frames['ADSB_message'], const_frame(), df(frames['ADSB_message']), getTC(frames['ADSB_message']))
             continue
         if identifier6(df(frames['ADSB_message']), getTC(frames['ADSB_message'])):
-            transformer6(frames['ADSB_message'], json_frame, df(frames['ADSB_message']), getTC(frames['ADSB_message']))
+            transformer6(frames['ADSB_message'], const_frame(), df(frames['ADSB_message']), getTC(frames['ADSB_message']))
             continue
         if identifier7(df(frames['ADSB_message']), getTC(frames['ADSB_message'])):
-            transformer7(frames['ADSB_message'], json_frame, df(frames['ADSB_message']), getTC(frames['ADSB_message']))
+            transformer7(frames['ADSB_message'], const_frame(), df(frames['ADSB_message']), getTC(frames['ADSB_message']))
 
         #pos_data.append(each_pos)
-    json_data = {
-    "meta":"",
-    "data":pos_data
-    }
+    # json_data = {
+    # "meta":"",
+    # "data":pos_data
+    # }
     #s=json.dumps(json_data, indent=2, separators=(',',':'))
     #fileOut_obj.write(s)
 
