@@ -68,6 +68,38 @@ def transformer4(msg, json_frame, df, tc):
     print(msg, "Airborne Velocity")
     msg_bin = hexToBin(msg[8:22])
     print("Subtype:", int(msg_bin[5:8], 2))
+    if int(msg_bin[5:8], 2) == 1:
+        json_frame['Subtype'] = int(msg_bin[5:8], 2)
+        json_frame["IC"] = int(msg_bin[8], 2)
+        json_frame["RESV_A"] = int(msg_bin[9], 2)
+        json_frame["NAC"] =  int(msg_bin[10:13], 2)
+        json_frame["S_ew"] =  int(msg_bin[13], 2)
+        json_frame["V_ew"] =  int(msg_bin[14:24], 2)
+        json_frame["S_ns"] =  int(msg_bin[24], 2)
+        json_frame["V_ns"] =  int(msg_bin[25:35], 2)
+        json_frame["VrSrc"] =  int(msg_bin[35], 2)
+        json_frame["S_vr"] =  int(msg_bin[36], 2)
+        json_frame["Vr"] =  int(msg_bin[37:46], 2)
+        json_frame["RESV_B"] = int(msg_bin[46:48], 2)
+        json_frame["S_Dif"] = int(msg_bin[48], 2)
+        json_frame["Dif"] = int(msg_bin[49:56], 2)
+
+    elif int(msg_bin[5:8], 2) == 3:
+        json_frame['Subtype'] = int(msg_bin[5:8], 2)
+        json_frame["IC"] = int(msg_bin[8], 2)
+        json_frame["RESV_A"] = int(msg_bin[9], 2)
+        json_frame["NAC"] =  int(msg_bin[10:13], 2)
+        json_frame["S_hdg"] =  int(msg_bin[13], 2)
+        json_frame["Hdg"] =  int(msg_bin[14:24], 2)
+        json_frame["AS_t"] =  int(msg_bin[24], 2)
+        json_frame["AS"] =  int(msg_bin[25:35], 2)
+        json_frame["VrSrc"] =  int(msg_bin[35], 2)
+        json_frame["S_vr"] =  int(msg_bin[36], 2)
+        json_frame["Vr"] =  int(msg_bin[37:46], 2)
+        json_frame["RESV_B"] = int(msg_bin[46:48], 2)
+        json_frame["S_Dif"] = int(msg_bin[48], 2)
+        json_frame["Dif"] = int(msg_bin[49:56], 2)
+    return json_frame
 
 def transformer5(msg, json_frame, df, tc):
     print("Airborne position with GNSS altitiude", df, tc)

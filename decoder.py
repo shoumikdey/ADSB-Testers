@@ -167,7 +167,7 @@ def decode(file_obj, fileOut_obj, fileName):
             pos_data.append({**frames, **transformer3(frames['ADSB_message'], const_frame()['data'], df(frames['ADSB_message']), getTC(frames['ADSB_message']))})
             continue
         if identifier4(df(frames['ADSB_message']), getTC(frames['ADSB_message'])):
-            transformer4(frames['ADSB_message'], const_frame()['data'], df(frames['ADSB_message']), getTC(frames['ADSB_message']))
+            pos_data.append({**frames, **transformer4(frames['ADSB_message'], const_frame()['data'], df(frames['ADSB_message']), getTC(frames['ADSB_message']))})
             continue
         if identifier5(df(frames['ADSB_message']), getTC(frames['ADSB_message'])):
             transformer5(frames['ADSB_message'], const_frame()['data'], df(frames['ADSB_message']), getTC(frames['ADSB_message']))
