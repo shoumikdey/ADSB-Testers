@@ -29,6 +29,7 @@
       "latitude":57.37437620001324,
       "longitude":-10.223841513356831,
       "altitude":37000,
+      "callsign":null,
       "Subtype":null,
       "IC":null,
       "RESV_A":null,
@@ -67,8 +68,7 @@
       "tgt_alt_source":null,
       "prev_lat":null,
       "prev_long":null,
-      "isLocalUni":null,
-      "ADSB_msg":"8f4bb84758bf023ad431f930875e"
+      "isLocalUni":null
     },
     {
       "id":25,
@@ -91,6 +91,7 @@
       "latitude":57.11331125033104,
       "longitude":1.523555632560484,
       "altitude":38000,
+      "callsign":null,
       "Subtype":null,
       "IC":null,
       "RESV_A":null,
@@ -129,8 +130,7 @@
       "tgt_alt_source":null,
       "prev_lat":null,
       "prev_long":null,
-      "isLocalUni":null,
-      "ADSB_msg":"8d4ba9ed58c38570e2432c2092ae"
+      "isLocalUni":null
     },
     {
       "id":75,
@@ -153,6 +153,7 @@
       "latitude":57.11521989208156,
       "longitude":1.516201880670363,
       "altitude":38000,
+      "callsign":null,
       "Subtype":null,
       "IC":null,
       "RESV_A":null,
@@ -191,8 +192,7 @@
       "tgt_alt_source":null,
       "prev_lat":null,
       "prev_long":null,
-      "isLocalUni":null,
-      "ADSB_msg":"8d4ba9ed58c385713442d96e4be3"
+      "isLocalUni":null
     },
     {
       "id":82,
@@ -215,6 +215,7 @@
       "latitude":51.01352497682733,
       "longitude":11.305618286132812,
       "altitude":38000,
+      "callsign":null,
       "Subtype":null,
       "IC":null,
       "RESV_A":null,
@@ -253,8 +254,7 @@
       "tgt_alt_source":null,
       "prev_lat":null,
       "prev_long":null,
-      "isLocalUni":null,
-      "ADSB_msg":"8d4ba9ed58c382027452ca4ec727"
+      "isLocalUni":null
     },
     {
       "id":108,
@@ -277,6 +277,7 @@
       "latitude":51.01534051410222,
       "longitude":11.299819946289062,
       "altitude":38000,
+      "callsign":null,
       "Subtype":null,
       "IC":null,
       "RESV_A":null,
@@ -315,8 +316,7 @@
       "tgt_alt_source":null,
       "prev_lat":null,
       "prev_long":null,
-      "isLocalUni":null,
-      "ADSB_msg":"8d4ba9ed58c3857182428d33d57f"
+      "isLocalUni":null
     },
     {
       "id":126,
@@ -339,6 +339,7 @@
       "latitude":51.01534051410222,
       "longitude":11.299819946289062,
       "altitude":38000,
+      "callsign":null,
       "Subtype":null,
       "IC":null,
       "RESV_A":null,
@@ -377,8 +378,69 @@
       "tgt_alt_source":null,
       "prev_lat":null,
       "prev_long":null,
-      "isLocalUni":null,
-      "ADSB_msg":"8d4ba9ed58c38202c25279e9cd8f"
+      "isLocalUni":null
+    },
+    {
+      "id":161,
+      "ADSB_raw":"@0000050E323C8d4ba9ed25508671e75ce04fc7fd;",
+      "Timestamp":"0000050E323C",
+      "ADSB_message":"8d4ba9ed25508671e75ce04fc7fd",
+      "SamplePos":null,
+      "df":null,
+      "tc":null,
+      "capability":null,
+      "icao":null,
+      "parity":null,
+      "surv_stat":null,
+      "NICsb":null,
+      "alt":null,
+      "Time":null,
+      "cpr_flag":null,
+      "cprLat":null,
+      "cprLong":null,
+      "latitude":null,
+      "longitude":null,
+      "altitude":null,
+      "callsign":"THY1953_SC",
+      "Subtype":null,
+      "IC":null,
+      "RESV_A":null,
+      "NAC":null,
+      "S_ew":null,
+      "V_ew":null,
+      "S_ns":null,
+      "V_ns":null,
+      "VrSrc":null,
+      "S_vr":null,
+      "Vr":null,
+      "RESV_B":null,
+      "S_Dif":null,
+      "Dif":null,
+      "S_hdg":null,
+      "Hdg":null,
+      "AS_t":null,
+      "AS":null,
+      "stype_code":null,
+      "sccc":null,
+      "lw_codes":null,
+      "op_mc":null,
+      "ver":null,
+      "NIC":null,
+      "NACp":null,
+      "SIL":null,
+      "HRD":null,
+      "bds_1":null,
+      "bds_2":null,
+      "mcp_alt":null,
+      "fms_alt":null,
+      "baro_set":null,
+      "VNAV_state":null,
+      "Alt_hold_state":null,
+      "Apr_state":null,
+      "tgt_alt_source":null,
+      "prev_lat":null,
+      "prev_long":null,
+      "isLocalUni":null
     },
     {
       "id":162,
@@ -401,6 +463,7 @@
       "latitude":57.37437620001324,
       "longitude":-10.223841513356831,
       "altitude":37000,
+      "callsign":null,
       "Subtype":null,
       "IC":null,
       "RESV_A":null,
@@ -439,8 +502,7 @@
       "tgt_alt_source":null,
       "prev_lat":null,
       "prev_long":null,
-      "isLocalUni":null,
-      "ADSB_msg":"8f4bb84758bf023a52331def1d53"
+      "isLocalUni":null
     },
     {
       "id":188,
@@ -463,6 +525,7 @@
       "latitude":57.37437620001324,
       "longitude":-10.223841513356831,
       "altitude":37000,
+      "callsign":null,
       "Subtype":null,
       "IC":null,
       "RESV_A":null,
@@ -501,8 +564,7 @@
       "tgt_alt_source":null,
       "prev_lat":null,
       "prev_long":null,
-      "isLocalUni":null,
-      "ADSB_msg":"8f4bb84758bf023a3c334c9e5517"
+      "isLocalUni":null
     },
     {
       "id":191,
@@ -525,6 +587,7 @@
       "latitude":51.01534051410222,
       "longitude":11.299819946289062,
       "altitude":38000,
+      "callsign":null,
       "Subtype":null,
       "IC":null,
       "RESV_A":null,
@@ -563,8 +626,7 @@
       "tgt_alt_source":null,
       "prev_lat":null,
       "prev_long":null,
-      "isLocalUni":null,
-      "ADSB_msg":"8d4ba9ed58c38203185223098d76"
+      "isLocalUni":null
     },
     {
       "id":208,
@@ -587,6 +649,7 @@
       "latitude":51.34097341763771,
       "longitude":10.706329345703125,
       "altitude":37000,
+      "callsign":null,
       "Subtype":null,
       "IC":null,
       "RESV_A":null,
@@ -625,8 +688,7 @@
       "tgt_alt_source":null,
       "prev_lat":null,
       "prev_long":null,
-      "isLocalUni":null,
-      "ADSB_msg":"8f4bb84758bf05a828242a5c5cfe"
+      "isLocalUni":null
     },
     {
       "id":224,
@@ -649,6 +711,7 @@
       "latitude":51.34097341763771,
       "longitude":10.706329345703125,
       "altitude":37000,
+      "callsign":null,
       "Subtype":null,
       "IC":null,
       "RESV_A":null,
@@ -687,8 +750,7 @@
       "tgt_alt_source":null,
       "prev_lat":null,
       "prev_long":null,
-      "isLocalUni":null,
-      "ADSB_msg":"8f4bb84758bf023a28337a754546"
+      "isLocalUni":null
     },
     {
       "id":225,
@@ -711,6 +773,7 @@
       "latitude":51.01901814088983,
       "longitude":11.287689208984375,
       "altitude":38000,
+      "callsign":null,
       "Subtype":null,
       "IC":null,
       "RESV_A":null,
@@ -749,8 +812,7 @@
       "tgt_alt_source":null,
       "prev_lat":null,
       "prev_long":null,
-      "isLocalUni":null,
-      "ADSB_msg":"8d4ba9ed58c385722041ee14bece"
+      "isLocalUni":null
     },
     {
       "id":258,
@@ -773,6 +835,7 @@
       "latitude":51.33994926840572,
       "longitude":10.713958740234375,
       "altitude":37000,
+      "callsign":null,
       "Subtype":null,
       "IC":null,
       "RESV_A":null,
@@ -811,8 +874,7 @@
       "tgt_alt_source":null,
       "prev_lat":null,
       "prev_long":null,
-      "isLocalUni":null,
-      "ADSB_msg":"8f4bb84758bf05a7fc248ea3a67b"
+      "isLocalUni":null
     },
     {
       "id":321,
@@ -835,6 +897,7 @@
       "latitude":51.01901814088983,
       "longitude":11.287689208984375,
       "altitude":38000,
+      "callsign":null,
       "Subtype":null,
       "IC":null,
       "RESV_A":null,
@@ -873,8 +936,7 @@
       "tgt_alt_source":null,
       "prev_lat":null,
       "prev_long":null,
-      "isLocalUni":null,
-      "ADSB_msg":"8d4ba9ed58c38203ba517fac6012"
+      "isLocalUni":null
     },
     {
       "id":335,
@@ -897,6 +959,7 @@
       "latitude":51.02278887215307,
       "longitude":11.275177001953125,
       "altitude":38000,
+      "callsign":null,
       "Subtype":null,
       "IC":null,
       "RESV_A":null,
@@ -935,8 +998,7 @@
       "tgt_alt_source":null,
       "prev_lat":null,
       "prev_long":null,
-      "isLocalUni":null,
-      "ADSB_msg":"8d4ba9ed58c38572c2414a2c69dc"
+      "isLocalUni":null
     },
     {
       "id":359,
@@ -959,6 +1021,7 @@
       "latitude":51.02278887215307,
       "longitude":11.275177001953125,
       "altitude":38000,
+      "callsign":null,
       "Subtype":null,
       "IC":null,
       "RESV_A":null,
@@ -997,8 +1060,7 @@
       "tgt_alt_source":null,
       "prev_lat":null,
       "prev_long":null,
-      "isLocalUni":null,
-      "ADSB_msg":"8d4ba9ed58c382040a512cf12595"
+      "isLocalUni":null
     },
     {
       "id":382,
@@ -1021,6 +1083,7 @@
       "latitude":51.02558200642214,
       "longitude":11.265945434570312,
       "altitude":38000,
+      "callsign":null,
       "Subtype":null,
       "IC":null,
       "RESV_A":null,
@@ -1059,8 +1122,7 @@
       "tgt_alt_source":null,
       "prev_lat":null,
       "prev_long":null,
-      "isLocalUni":null,
-      "ADSB_msg":"8d4ba9ed58c385733a40d16781a7"
+      "isLocalUni":null
     },
     {
       "id":387,
@@ -1083,6 +1145,7 @@
       "latitude":51.33994926840572,
       "longitude":10.713958740234375,
       "altitude":37000,
+      "callsign":null,
       "Subtype":null,
       "IC":null,
       "RESV_A":null,
@@ -1121,8 +1184,69 @@
       "tgt_alt_source":null,
       "prev_lat":null,
       "prev_long":null,
-      "isLocalUni":null,
-      "ADSB_msg":"8f4bb84758bf02399234cc2257a8"
+      "isLocalUni":null
+    },
+    {
+      "id":403,
+      "ADSB_raw":"@00000AA3AC368d4ba9ed25508671e75ce04fc7fd;",
+      "Timestamp":"00000AA3AC36",
+      "ADSB_message":"8d4ba9ed25508671e75ce04fc7fd",
+      "SamplePos":null,
+      "df":null,
+      "tc":null,
+      "capability":null,
+      "icao":null,
+      "parity":null,
+      "surv_stat":null,
+      "NICsb":null,
+      "alt":null,
+      "Time":null,
+      "cpr_flag":null,
+      "cprLat":null,
+      "cprLong":null,
+      "latitude":null,
+      "longitude":null,
+      "altitude":null,
+      "callsign":"THY1953_SC",
+      "Subtype":null,
+      "IC":null,
+      "RESV_A":null,
+      "NAC":null,
+      "S_ew":null,
+      "V_ew":null,
+      "S_ns":null,
+      "V_ns":null,
+      "VrSrc":null,
+      "S_vr":null,
+      "Vr":null,
+      "RESV_B":null,
+      "S_Dif":null,
+      "Dif":null,
+      "S_hdg":null,
+      "Hdg":null,
+      "AS_t":null,
+      "AS":null,
+      "stype_code":null,
+      "sccc":null,
+      "lw_codes":null,
+      "op_mc":null,
+      "ver":null,
+      "NIC":null,
+      "NACp":null,
+      "SIL":null,
+      "HRD":null,
+      "bds_1":null,
+      "bds_2":null,
+      "mcp_alt":null,
+      "fms_alt":null,
+      "baro_set":null,
+      "VNAV_state":null,
+      "Alt_hold_state":null,
+      "Apr_state":null,
+      "tgt_alt_source":null,
+      "prev_lat":null,
+      "prev_long":null,
+      "isLocalUni":null
     },
     {
       "id":404,
@@ -1145,6 +1269,7 @@
       "latitude":45.14012223583157,
       "longitude":27.757225967035062,
       "altitude":39000,
+      "callsign":null,
       "Subtype":null,
       "IC":null,
       "RESV_A":null,
@@ -1183,8 +1308,7 @@
       "tgt_alt_source":null,
       "prev_lat":null,
       "prev_long":null,
-      "isLocalUni":null,
-      "ADSB_msg":"8d8005f258c9059784528ec3aa7a"
+      "isLocalUni":null
     },
     {
       "id":420,
@@ -1207,6 +1331,7 @@
       "latitude":51.33994926840572,
       "longitude":10.713958740234375,
       "altitude":37000,
+      "callsign":null,
       "Subtype":null,
       "IC":null,
       "RESV_A":null,
@@ -1245,8 +1370,7 @@
       "tgt_alt_source":null,
       "prev_lat":null,
       "prev_long":null,
-      "isLocalUni":null,
-      "ADSB_msg":"8d4bb84758bf02397e34f510638f"
+      "isLocalUni":null
     },
     {
       "id":433,
@@ -1269,6 +1393,7 @@
       "latitude":51.02558200642214,
       "longitude":11.265945434570312,
       "altitude":38000,
+      "callsign":null,
       "Subtype":null,
       "IC":null,
       "RESV_A":null,
@@ -1307,8 +1432,7 @@
       "tgt_alt_source":null,
       "prev_lat":null,
       "prev_long":null,
-      "isLocalUni":null,
-      "ADSB_msg":"8d4ba9ed58c38204a8508c4d3f63"
+      "isLocalUni":null
     },
     {
       "id":460,
@@ -1331,6 +1455,7 @@
       "latitude":51.02818893173993,
       "longitude":11.257400512695312,
       "altitude":38000,
+      "callsign":null,
       "Subtype":null,
       "IC":null,
       "RESV_A":null,
@@ -1369,8 +1494,7 @@
       "tgt_alt_source":null,
       "prev_lat":null,
       "prev_long":null,
-      "isLocalUni":null,
-      "ADSB_msg":"8d4ba9ed58c38573aa406156e6b2"
+      "isLocalUni":null
     },
     {
       "id":514,
@@ -1393,6 +1517,7 @@
       "latitude":51.02911997649629,
       "longitude":11.2542724609375,
       "altitude":38000,
+      "callsign":null,
       "Subtype":null,
       "IC":null,
       "RESV_A":null,
@@ -1431,8 +1556,7 @@
       "tgt_alt_source":null,
       "prev_lat":null,
       "prev_long":null,
-      "isLocalUni":null,
-      "ADSB_msg":"8d4ba9ed58c38573d24038d6630c"
+      "isLocalUni":null
     },
     {
       "id":526,
@@ -1455,6 +1579,7 @@
       "latitude":51.33994926840572,
       "longitude":10.713958740234375,
       "altitude":37000,
+      "callsign":null,
       "Subtype":null,
       "IC":null,
       "RESV_A":null,
@@ -1493,8 +1618,7 @@
       "tgt_alt_source":null,
       "prev_lat":null,
       "prev_long":null,
-      "isLocalUni":null,
-      "ADSB_msg":"8d4bb84758bf0239403582397f94"
+      "isLocalUni":null
     },
     {
       "id":542,
@@ -1517,6 +1641,7 @@
       "latitude":51.02911997649629,
       "longitude":11.2542724609375,
       "altitude":38000,
+      "callsign":null,
       "Subtype":null,
       "IC":null,
       "RESV_A":null,
@@ -1555,8 +1680,7 @@
       "tgt_alt_source":null,
       "prev_lat":null,
       "prev_long":null,
-      "isLocalUni":null,
-      "ADSB_msg":"8d4ba9ed58c382052050111a3ede"
+      "isLocalUni":null
     },
     {
       "id":583,
@@ -1579,6 +1703,7 @@
       "latitude":51.33994926840572,
       "longitude":10.713958740234375,
       "altitude":37000,
+      "callsign":null,
       "Subtype":null,
       "IC":null,
       "RESV_A":null,
@@ -1617,8 +1742,7 @@
       "tgt_alt_source":null,
       "prev_lat":null,
       "prev_long":null,
-      "isLocalUni":null,
-      "ADSB_msg":"8d4bb84758bf0239063603759a09"
+      "isLocalUni":null
     },
     {
       "id":633,
@@ -1641,6 +1765,7 @@
       "latitude":51.03335623013771,
       "longitude":11.240310668945312,
       "altitude":38000,
+      "callsign":null,
       "Subtype":null,
       "IC":null,
       "RESV_A":null,
@@ -1679,8 +1804,7 @@
       "tgt_alt_source":null,
       "prev_lat":null,
       "prev_long":null,
-      "isLocalUni":null,
-      "ADSB_msg":"8d4ba9ed58c38574883f8126dc2b"
+      "isLocalUni":null
     },
     {
       "id":670,
@@ -1703,6 +1827,7 @@
       "latitude":51.03335623013771,
       "longitude":11.240310668945312,
       "altitude":38000,
+      "callsign":null,
       "Subtype":null,
       "IC":null,
       "RESV_A":null,
@@ -1741,8 +1866,69 @@
       "tgt_alt_source":null,
       "prev_lat":null,
       "prev_long":null,
-      "isLocalUni":null,
-      "ADSB_msg":"8d4ba9ed58c38205d64f5888901b"
+      "isLocalUni":null
+    },
+    {
+      "id":699,
+      "ADSB_raw":"@000011F05A528d4ba9ed25508671e75ce04fc7fd;",
+      "Timestamp":"000011F05A52",
+      "ADSB_message":"8d4ba9ed25508671e75ce04fc7fd",
+      "SamplePos":null,
+      "df":null,
+      "tc":null,
+      "capability":null,
+      "icao":null,
+      "parity":null,
+      "surv_stat":null,
+      "NICsb":null,
+      "alt":null,
+      "Time":null,
+      "cpr_flag":null,
+      "cprLat":null,
+      "cprLong":null,
+      "latitude":null,
+      "longitude":null,
+      "altitude":null,
+      "callsign":"THY1953_SC",
+      "Subtype":null,
+      "IC":null,
+      "RESV_A":null,
+      "NAC":null,
+      "S_ew":null,
+      "V_ew":null,
+      "S_ns":null,
+      "V_ns":null,
+      "VrSrc":null,
+      "S_vr":null,
+      "Vr":null,
+      "RESV_B":null,
+      "S_Dif":null,
+      "Dif":null,
+      "S_hdg":null,
+      "Hdg":null,
+      "AS_t":null,
+      "AS":null,
+      "stype_code":null,
+      "sccc":null,
+      "lw_codes":null,
+      "op_mc":null,
+      "ver":null,
+      "NIC":null,
+      "NACp":null,
+      "SIL":null,
+      "HRD":null,
+      "bds_1":null,
+      "bds_2":null,
+      "mcp_alt":null,
+      "fms_alt":null,
+      "baro_set":null,
+      "VNAV_state":null,
+      "Alt_hold_state":null,
+      "Apr_state":null,
+      "tgt_alt_source":null,
+      "prev_lat":null,
+      "prev_long":null,
+      "isLocalUni":null
     },
     {
       "id":732,
@@ -1765,6 +1951,7 @@
       "latitude":51.03335623013771,
       "longitude":11.240310668945312,
       "altitude":38000,
+      "callsign":null,
       "Subtype":null,
       "IC":null,
       "RESV_A":null,
@@ -1803,8 +1990,7 @@
       "tgt_alt_source":null,
       "prev_lat":null,
       "prev_long":null,
-      "isLocalUni":null,
-      "ADSB_msg":"8d4ba9ed58c38206244f09eb6c1b"
+      "isLocalUni":null
     },
     {
       "id":752,
@@ -1827,6 +2013,7 @@
       "latitude":51.33994926840572,
       "longitude":10.713958740234375,
       "altitude":37000,
+      "callsign":null,
       "Subtype":null,
       "IC":null,
       "RESV_A":null,
@@ -1865,8 +2052,7 @@
       "tgt_alt_source":null,
       "prev_lat":null,
       "prev_long":null,
-      "isLocalUni":null,
-      "ADSB_msg":"8f4bb84758bf0238923707e0a1a5"
+      "isLocalUni":null
     },
     {
       "id":777,
@@ -1889,6 +2075,7 @@
       "latitude":51.03335623013771,
       "longitude":11.240310668945312,
       "altitude":38000,
+      "callsign":null,
       "Subtype":null,
       "IC":null,
       "RESV_A":null,
@@ -1927,8 +2114,7 @@
       "tgt_alt_source":null,
       "prev_lat":null,
       "prev_long":null,
-      "isLocalUni":null,
-      "ADSB_msg":"8d4ba9ed58c382066e4ebee364cf"
+      "isLocalUni":null
     },
     {
       "id":810,
@@ -1951,6 +2137,7 @@
       "latitude":51.33994926840572,
       "longitude":10.713958740234375,
       "altitude":37000,
+      "callsign":null,
       "Subtype":null,
       "IC":null,
       "RESV_A":null,
@@ -1989,8 +2176,7 @@
       "tgt_alt_source":null,
       "prev_lat":null,
       "prev_long":null,
-      "isLocalUni":null,
-      "ADSB_msg":"8f4bb84758bf02387c373a79e7c6"
+      "isLocalUni":null
     },
     {
       "id":832,
@@ -2013,6 +2199,7 @@
       "latitude":51.038663185248936,
       "longitude":11.222763061523438,
       "altitude":38000,
+      "callsign":null,
       "Subtype":null,
       "IC":null,
       "RESV_A":null,
@@ -2051,8 +2238,7 @@
       "tgt_alt_source":null,
       "prev_lat":null,
       "prev_long":null,
-      "isLocalUni":null,
-      "ADSB_msg":"8d4ba9ed58c385756c3e9b117185"
+      "isLocalUni":null
     },
     {
       "id":887,
@@ -2075,6 +2261,7 @@
       "latitude":51.038663185248936,
       "longitude":11.222763061523438,
       "altitude":38000,
+      "callsign":null,
       "Subtype":null,
       "IC":null,
       "RESV_A":null,
@@ -2113,8 +2300,7 @@
       "tgt_alt_source":null,
       "prev_lat":null,
       "prev_long":null,
-      "isLocalUni":null,
-      "ADSB_msg":"8d4ba9ed58c38206c44e663d03d5"
+      "isLocalUni":null
     },
     {
       "id":891,
@@ -2137,6 +2323,7 @@
       "latitude":51.33994926840572,
       "longitude":10.713958740234375,
       "altitude":37000,
+      "callsign":null,
       "Subtype":null,
       "IC":null,
       "RESV_A":null,
@@ -2175,8 +2362,7 @@
       "tgt_alt_source":null,
       "prev_lat":null,
       "prev_long":null,
-      "isLocalUni":null,
-      "ADSB_msg":"8f4bb84758bf0238543793ab7af2"
+      "isLocalUni":null
     },
     {
       "id":898,
@@ -2199,6 +2385,7 @@
       "latitude":51.04047872252383,
       "longitude":11.216812133789062,
       "altitude":38000,
+      "callsign":null,
       "Subtype":null,
       "IC":null,
       "RESV_A":null,
@@ -2237,8 +2424,7 @@
       "tgt_alt_source":null,
       "prev_lat":null,
       "prev_long":null,
-      "isLocalUni":null,
-      "ADSB_msg":"8d4ba9ed58c38575ba3e4d8471b9"
+      "isLocalUni":null
     },
     {
       "id":946,
@@ -2261,6 +2447,7 @@
       "latitude":51.04224770756091,
       "longitude":11.211013793945312,
       "altitude":38000,
+      "callsign":null,
       "Subtype":null,
       "IC":null,
       "RESV_A":null,
@@ -2299,8 +2486,7 @@
       "tgt_alt_source":null,
       "prev_lat":null,
       "prev_long":null,
-      "isLocalUni":null,
-      "ADSB_msg":"8d4ba9ed58c38576063e01d072ee"
+      "isLocalUni":null
     },
     {
       "id":990,
@@ -2323,6 +2509,7 @@
       "latitude":51.04224770756091,
       "longitude":11.211013793945312,
       "altitude":38000,
+      "callsign":null,
       "Subtype":null,
       "IC":null,
       "RESV_A":null,
@@ -2361,8 +2548,7 @@
       "tgt_alt_source":null,
       "prev_lat":null,
       "prev_long":null,
-      "isLocalUni":null,
-      "ADSB_msg":"8d4ba9ed58c382075a4dce774429"
+      "isLocalUni":null
     },
     {
       "id":1007,
@@ -2385,6 +2571,7 @@
       "latitude":51.32807844776218,
       "longitude":10.8001708984375,
       "altitude":37000,
+      "callsign":null,
       "Subtype":null,
       "IC":null,
       "RESV_A":null,
@@ -2423,8 +2610,7 @@
       "tgt_alt_source":null,
       "prev_lat":null,
       "prev_long":null,
-      "isLocalUni":null,
-      "ADSB_msg":"8f4bb84758bf05a5fe28f8a5287a"
+      "isLocalUni":null
     },
     {
       "id":1019,
@@ -2447,6 +2633,7 @@
       "latitude":51.32807844776218,
       "longitude":10.8001708984375,
       "altitude":37000,
+      "callsign":null,
       "Subtype":null,
       "IC":null,
       "RESV_A":null,
@@ -2485,8 +2672,7 @@
       "tgt_alt_source":null,
       "prev_lat":null,
       "prev_long":null,
-      "isLocalUni":null,
-      "ADSB_msg":"8f4bb84758bf0237f638673396a2"
+      "isLocalUni":null
     },
     {
       "id":1037,
@@ -2509,6 +2695,7 @@
       "latitude":51.04224770756091,
       "longitude":11.211013793945312,
       "altitude":38000,
+      "callsign":null,
       "Subtype":null,
       "IC":null,
       "RESV_A":null,
@@ -2547,8 +2734,7 @@
       "tgt_alt_source":null,
       "prev_lat":null,
       "prev_long":null,
-      "isLocalUni":null,
-      "ADSB_msg":"8d4ba9ed58c38207a44d8331e452"
+      "isLocalUni":null
     },
     {
       "id":1045,
@@ -2571,6 +2757,7 @@
       "latitude":51.32742671643273,
       "longitude":10.804824829101562,
       "altitude":37000,
+      "callsign":null,
       "Subtype":null,
       "IC":null,
       "RESV_A":null,
@@ -2609,8 +2796,7 @@
       "tgt_alt_source":null,
       "prev_lat":null,
       "prev_long":null,
-      "isLocalUni":null,
-      "ADSB_msg":"8f4bb84758bf05a5e22935d4ab15"
+      "isLocalUni":null
     },
     {
       "id":1061,
@@ -2633,6 +2819,7 @@
       "latitude":51.326961194054554,
       "longitude":10.808258056640625,
       "altitude":37000,
+      "callsign":null,
       "Subtype":null,
       "IC":null,
       "RESV_A":null,
@@ -2671,8 +2858,7 @@
       "tgt_alt_source":null,
       "prev_lat":null,
       "prev_long":null,
-      "isLocalUni":null,
-      "ADSB_msg":"8f4bb84758bf05a5ce29623497ac"
+      "isLocalUni":null
     },
     {
       "id":1108,
@@ -2695,6 +2881,7 @@
       "latitude":51.326542223914196,
       "longitude":10.81146240234375,
       "altitude":37000,
+      "callsign":null,
       "Subtype":null,
       "IC":null,
       "RESV_A":null,
@@ -2733,8 +2920,7 @@
       "tgt_alt_source":null,
       "prev_lat":null,
       "prev_long":null,
-      "isLocalUni":null,
-      "ADSB_msg":"8f4bb84758bf05a5bc298c38ef14"
+      "isLocalUni":null
     },
     {
       "id":1142,
@@ -2757,6 +2943,7 @@
       "latitude":51.326542223914196,
       "longitude":10.81146240234375,
       "altitude":37000,
+      "callsign":null,
       "Subtype":null,
       "IC":null,
       "RESV_A":null,
@@ -2795,8 +2982,7 @@
       "tgt_alt_source":null,
       "prev_lat":null,
       "prev_long":null,
-      "isLocalUni":null,
-      "ADSB_msg":"8f4bb84758bf0237ae390506dba3"
+      "isLocalUni":null
     },
     {
       "id":1144,
@@ -2819,6 +3005,7 @@
       "latitude":51.04741500595868,
       "longitude":11.193923950195312,
       "altitude":38000,
+      "callsign":null,
       "Subtype":null,
       "IC":null,
       "RESV_A":null,
@@ -2857,8 +3044,7 @@
       "tgt_alt_source":null,
       "prev_lat":null,
       "prev_long":null,
-      "isLocalUni":null,
-      "ADSB_msg":"8d4ba9ed58c38576e43d21fd8d8a"
+      "isLocalUni":null
     },
     {
       "id":1165,
@@ -2881,6 +3067,7 @@
       "latitude":51.3260301492982,
       "longitude":10.814971923828125,
       "altitude":37000,
+      "callsign":null,
       "Subtype":null,
       "IC":null,
       "RESV_A":null,
@@ -2919,8 +3106,7 @@
       "tgt_alt_source":null,
       "prev_lat":null,
       "prev_long":null,
-      "isLocalUni":null,
-      "ADSB_msg":"8f4bb84758bf05a5a629ba91a4cb"
+      "isLocalUni":null
     },
     {
       "id":1252,
@@ -2943,6 +3129,7 @@
       "latitude":51.32481979111493,
       "longitude":10.823898315429688,
       "altitude":37000,
+      "callsign":null,
       "Subtype":null,
       "IC":null,
       "RESV_A":null,
@@ -2981,8 +3168,7 @@
       "tgt_alt_source":null,
       "prev_lat":null,
       "prev_long":null,
-      "isLocalUni":null,
-      "ADSB_msg":"8f4bb84758bf05a5722a2ff17187"
+      "isLocalUni":null
     },
     {
       "id":1294,
@@ -3005,6 +3191,7 @@
       "latitude":51.04741500595868,
       "longitude":11.193923950195312,
       "altitude":38000,
+      "callsign":null,
       "Subtype":null,
       "IC":null,
       "RESV_A":null,
@@ -3043,8 +3230,69 @@
       "tgt_alt_source":null,
       "prev_lat":null,
       "prev_long":null,
-      "isLocalUni":null,
-      "ADSB_msg":"8d4ba9ed58c38208de4c42d0beb2"
+      "isLocalUni":null
+    },
+    {
+      "id":1295,
+      "ADSB_raw":"@00001F18E11A8f4bb84723407539c84820174733;",
+      "Timestamp":"00001F18E11A",
+      "ADSB_message":"8f4bb84723407539c84820174733",
+      "SamplePos":null,
+      "df":null,
+      "tc":null,
+      "capability":null,
+      "icao":null,
+      "parity":null,
+      "surv_stat":null,
+      "NICsb":null,
+      "alt":null,
+      "Time":null,
+      "cpr_flag":null,
+      "cprLat":null,
+      "cprLong":null,
+      "latitude":null,
+      "longitude":null,
+      "altitude":null,
+      "callsign":"PGT92D__EC",
+      "Subtype":null,
+      "IC":null,
+      "RESV_A":null,
+      "NAC":null,
+      "S_ew":null,
+      "V_ew":null,
+      "S_ns":null,
+      "V_ns":null,
+      "VrSrc":null,
+      "S_vr":null,
+      "Vr":null,
+      "RESV_B":null,
+      "S_Dif":null,
+      "Dif":null,
+      "S_hdg":null,
+      "Hdg":null,
+      "AS_t":null,
+      "AS":null,
+      "stype_code":null,
+      "sccc":null,
+      "lw_codes":null,
+      "op_mc":null,
+      "ver":null,
+      "NIC":null,
+      "NACp":null,
+      "SIL":null,
+      "HRD":null,
+      "bds_1":null,
+      "bds_2":null,
+      "mcp_alt":null,
+      "fms_alt":null,
+      "baro_set":null,
+      "VNAV_state":null,
+      "Alt_hold_state":null,
+      "Apr_state":null,
+      "tgt_alt_source":null,
+      "prev_lat":null,
+      "prev_long":null,
+      "isLocalUni":null
     },
     {
       "id":1304,
@@ -3067,6 +3315,7 @@
       "latitude":51.32370253740731,
       "longitude":10.831985473632812,
       "altitude":37000,
+      "callsign":null,
       "Subtype":null,
       "IC":null,
       "RESV_A":null,
@@ -3105,8 +3354,69 @@
       "tgt_alt_source":null,
       "prev_lat":null,
       "prev_long":null,
-      "isLocalUni":null,
-      "ADSB_msg":"8f4bb84758bf05a5422a996f4a3b"
+      "isLocalUni":null
+    },
+    {
+      "id":1318,
+      "ADSB_raw":"@00001FED1C4C8d4ba9ed25508671e75ce04fc7fd;",
+      "Timestamp":"00001FED1C4C",
+      "ADSB_message":"8d4ba9ed25508671e75ce04fc7fd",
+      "SamplePos":null,
+      "df":null,
+      "tc":null,
+      "capability":null,
+      "icao":null,
+      "parity":null,
+      "surv_stat":null,
+      "NICsb":null,
+      "alt":null,
+      "Time":null,
+      "cpr_flag":null,
+      "cprLat":null,
+      "cprLong":null,
+      "latitude":null,
+      "longitude":null,
+      "altitude":null,
+      "callsign":"THY1953_SC",
+      "Subtype":null,
+      "IC":null,
+      "RESV_A":null,
+      "NAC":null,
+      "S_ew":null,
+      "V_ew":null,
+      "S_ns":null,
+      "V_ns":null,
+      "VrSrc":null,
+      "S_vr":null,
+      "Vr":null,
+      "RESV_B":null,
+      "S_Dif":null,
+      "Dif":null,
+      "S_hdg":null,
+      "Hdg":null,
+      "AS_t":null,
+      "AS":null,
+      "stype_code":null,
+      "sccc":null,
+      "lw_codes":null,
+      "op_mc":null,
+      "ver":null,
+      "NIC":null,
+      "NACp":null,
+      "SIL":null,
+      "HRD":null,
+      "bds_1":null,
+      "bds_2":null,
+      "mcp_alt":null,
+      "fms_alt":null,
+      "baro_set":null,
+      "VNAV_state":null,
+      "Alt_hold_state":null,
+      "Apr_state":null,
+      "tgt_alt_source":null,
+      "prev_lat":null,
+      "prev_long":null,
+      "isLocalUni":null
     },
     {
       "id":1325,
@@ -3129,6 +3439,7 @@
       "latitude":51.04741500595868,
       "longitude":11.193923950195312,
       "altitude":38000,
+      "callsign":null,
       "Subtype":null,
       "IC":null,
       "RESV_A":null,
@@ -3167,8 +3478,7 @@
       "tgt_alt_source":null,
       "prev_lat":null,
       "prev_long":null,
-      "isLocalUni":null,
-      "ADSB_msg":"8d4ba9ed58c382092a4bf5e7012f"
+      "isLocalUni":null
     },
     {
       "id":1349,
@@ -3191,6 +3501,7 @@
       "latitude":51.05453749834481,
       "longitude":11.170272827148438,
       "altitude":38000,
+      "callsign":null,
       "Subtype":null,
       "IC":null,
       "RESV_A":null,
@@ -3229,8 +3540,7 @@
       "tgt_alt_source":null,
       "prev_lat":null,
       "prev_long":null,
-      "isLocalUni":null,
-      "ADSB_msg":"8d4ba9ed58c38578163beb663462"
+      "isLocalUni":null
     },
     {
       "id":1388,
@@ -3253,6 +3563,7 @@
       "latitude":51.32370253740731,
       "longitude":10.831985473632812,
       "altitude":37000,
+      "callsign":null,
       "Subtype":null,
       "IC":null,
       "RESV_A":null,
@@ -3291,8 +3602,7 @@
       "tgt_alt_source":null,
       "prev_lat":null,
       "prev_long":null,
-      "isLocalUni":null,
-      "ADSB_msg":"8f4bb84758bf0237043a85c9b9ed"
+      "isLocalUni":null
     },
     {
       "id":1402,
@@ -3315,6 +3625,7 @@
       "latitude":51.05453749834481,
       "longitude":11.170272827148438,
       "altitude":38000,
+      "callsign":null,
       "Subtype":null,
       "IC":null,
       "RESV_A":null,
@@ -3353,8 +3664,7 @@
       "tgt_alt_source":null,
       "prev_lat":null,
       "prev_long":null,
-      "isLocalUni":null,
-      "ADSB_msg":"8d4ba9ed58c38209704bac39503a"
+      "isLocalUni":null
     },
     {
       "id":1444,
@@ -3377,6 +3687,7 @@
       "latitude":51.05621337890625,
       "longitude":11.16485595703125,
       "altitude":38000,
+      "callsign":null,
       "Subtype":null,
       "IC":null,
       "RESV_A":null,
@@ -3415,8 +3726,7 @@
       "tgt_alt_source":null,
       "prev_lat":null,
       "prev_long":null,
-      "isLocalUni":null,
-      "ADSB_msg":"8d4ba9ed58c385785e3ba47e4d10"
+      "isLocalUni":null
     },
     {
       "id":1461,
@@ -3439,6 +3749,7 @@
       "latitude":51.321421477754235,
       "longitude":10.848464965820312,
       "altitude":37000,
+      "callsign":null,
       "Subtype":null,
       "IC":null,
       "RESV_A":null,
@@ -3477,8 +3788,7 @@
       "tgt_alt_source":null,
       "prev_lat":null,
       "prev_long":null,
-      "isLocalUni":null,
-      "ADSB_msg":"8f4bb84758bf05a4e02b71fb5e92"
+      "isLocalUni":null
     },
     {
       "id":1489,
@@ -3501,6 +3811,7 @@
       "latitude":51.057982363943324,
       "longitude":11.158905029296875,
       "altitude":38000,
+      "callsign":null,
       "Subtype":null,
       "IC":null,
       "RESV_A":null,
@@ -3539,8 +3850,7 @@
       "tgt_alt_source":null,
       "prev_lat":null,
       "prev_long":null,
-      "isLocalUni":null,
-      "ADSB_msg":"8d4ba9ed58c38578aa3b56b46001"
+      "isLocalUni":null
     },
     {
       "id":1511,
@@ -3563,6 +3873,7 @@
       "latitude":51.057982363943324,
       "longitude":11.158905029296875,
       "altitude":38000,
+      "callsign":null,
       "Subtype":null,
       "IC":null,
       "RESV_A":null,
@@ -3601,8 +3912,7 @@
       "tgt_alt_source":null,
       "prev_lat":null,
       "prev_long":null,
-      "isLocalUni":null,
-      "ADSB_msg":"8d4ba9ed58c3820a0e4b0a132f77"
+      "isLocalUni":null
     },
     {
       "id":1593,
@@ -3625,6 +3935,7 @@
       "latitude":51.31941973152807,
       "longitude":10.863189697265625,
       "altitude":37000,
+      "callsign":null,
       "Subtype":null,
       "IC":null,
       "RESV_A":null,
@@ -3663,8 +3974,7 @@
       "tgt_alt_source":null,
       "prev_lat":null,
       "prev_long":null,
-      "isLocalUni":null,
-      "ADSB_msg":"8f4bb84758bf05a48a2c32979b91"
+      "isLocalUni":null
     },
     {
       "id":1595,
@@ -3687,6 +3997,7 @@
       "latitude":51.057982363943324,
       "longitude":11.158905029296875,
       "altitude":38000,
+      "callsign":null,
       "Subtype":null,
       "IC":null,
       "RESV_A":null,
@@ -3725,8 +4036,7 @@
       "tgt_alt_source":null,
       "prev_lat":null,
       "prev_long":null,
-      "isLocalUni":null,
-      "ADSB_msg":"8d4ba9ed58c3820a624ab48d2669"
+      "isLocalUni":null
     },
     {
       "id":1612,
@@ -3749,6 +4059,7 @@
       "latitude":51.06165999073093,
       "longitude":11.146621704101562,
       "altitude":38000,
+      "callsign":null,
       "Subtype":null,
       "IC":null,
       "RESV_A":null,
@@ -3787,8 +4098,7 @@
       "tgt_alt_source":null,
       "prev_lat":null,
       "prev_long":null,
-      "isLocalUni":null,
-      "ADSB_msg":"8d4ba9ed58c38579483ab5551484"
+      "isLocalUni":null
     },
     {
       "id":1634,
@@ -3811,6 +4121,7 @@
       "latitude":51.06165999073093,
       "longitude":11.146621704101562,
       "altitude":38000,
+      "callsign":null,
       "Subtype":null,
       "IC":null,
       "RESV_A":null,
@@ -3849,8 +4160,7 @@
       "tgt_alt_source":null,
       "prev_lat":null,
       "prev_long":null,
-      "isLocalUni":null,
-      "ADSB_msg":"8d4ba9ed58c3820aaa4a6c876d8a"
+      "isLocalUni":null
     },
     {
       "id":1693,
@@ -3873,6 +4183,7 @@
       "latitude":51.06165999073093,
       "longitude":11.146621704101562,
       "altitude":38000,
+      "callsign":null,
       "Subtype":null,
       "IC":null,
       "RESV_A":null,
@@ -3911,8 +4222,7 @@
       "tgt_alt_source":null,
       "prev_lat":null,
       "prev_long":null,
-      "isLocalUni":null,
-      "ADSB_msg":"8d4ba9ed58c3820afe4a16e54eb3"
+      "isLocalUni":null
     },
     {
       "id":1726,
@@ -3935,6 +4245,7 @@
       "latitude":51.0652445130429,
       "longitude":11.134796142578125,
       "altitude":38000,
+      "callsign":null,
       "Subtype":null,
       "IC":null,
       "RESV_A":null,
@@ -3973,8 +4284,7 @@
       "tgt_alt_source":null,
       "prev_lat":null,
       "prev_long":null,
-      "isLocalUni":null,
-      "ADSB_msg":"8d4ba9ed58c38579e23a1a7601b2"
+      "isLocalUni":null
     },
     {
       "id":1752,
@@ -3997,6 +4307,7 @@
       "latitude":51.0652445130429,
       "longitude":11.134796142578125,
       "altitude":38000,
+      "callsign":null,
       "Subtype":null,
       "IC":null,
       "RESV_A":null,
@@ -4035,8 +4346,7 @@
       "tgt_alt_source":null,
       "prev_lat":null,
       "prev_long":null,
-      "isLocalUni":null,
-      "ADSB_msg":"8d4ba9ed58c3820b4a49c89df9c9"
+      "isLocalUni":null
     },
     {
       "id":1760,
@@ -4059,6 +4369,7 @@
       "latitude":51.06710660255561,
       "longitude":11.128616333007812,
       "altitude":38000,
+      "callsign":null,
       "Subtype":null,
       "IC":null,
       "RESV_A":null,
@@ -4097,8 +4408,7 @@
       "tgt_alt_source":null,
       "prev_lat":null,
       "prev_long":null,
-      "isLocalUni":null,
-      "ADSB_msg":"8d4ba9ed58c3857a3239c95e2542"
+      "isLocalUni":null
     },
     {
       "id":1794,
@@ -4121,6 +4431,7 @@
       "latitude":51.06710660255561,
       "longitude":11.128616333007812,
       "altitude":38000,
+      "callsign":null,
       "Subtype":null,
       "IC":null,
       "RESV_A":null,
@@ -4159,8 +4470,7 @@
       "tgt_alt_source":null,
       "prev_lat":null,
       "prev_long":null,
-      "isLocalUni":null,
-      "ADSB_msg":"8d4ba9ed58c3820b9849783dce0c"
+      "isLocalUni":null
     },
     {
       "id":1822,
@@ -4183,6 +4493,7 @@
       "latitude":51.06710660255561,
       "longitude":11.128616333007812,
       "altitude":38000,
+      "callsign":null,
       "Subtype":null,
       "IC":null,
       "RESV_A":null,
@@ -4221,8 +4532,7 @@
       "tgt_alt_source":null,
       "prev_lat":null,
       "prev_long":null,
-      "isLocalUni":null,
-      "ADSB_msg":"8d4ba9ed58c3820bc4494bcd4838"
+      "isLocalUni":null
     },
     {
       "id":1871,
@@ -4245,6 +4555,7 @@
       "latitude":51.31941973152807,
       "longitude":10.863189697265625,
       "altitude":37000,
+      "callsign":null,
       "Subtype":null,
       "IC":null,
       "RESV_A":null,
@@ -4283,8 +4594,7 @@
       "tgt_alt_source":null,
       "prev_lat":null,
       "prev_long":null,
-      "isLocalUni":null,
-      "ADSB_msg":"8d4bb84758bf0235a83d8c0d8ed6"
+      "isLocalUni":null
     },
     {
       "id":1872,
@@ -4307,6 +4617,7 @@
       "latitude":51.07064457262977,
       "longitude":11.116943359375,
       "altitude":38000,
+      "callsign":null,
       "Subtype":null,
       "IC":null,
       "RESV_A":null,
@@ -4345,8 +4656,69 @@
       "tgt_alt_source":null,
       "prev_lat":null,
       "prev_long":null,
-      "isLocalUni":null,
-      "ADSB_msg":"8d4ba9ed58c3857aca3930326321"
+      "isLocalUni":null
+    },
+    {
+      "id":1877,
+      "ADSB_raw":"@00002E65C4B08d4ba9ed25508671e75ce04fc7fd;",
+      "Timestamp":"00002E65C4B0",
+      "ADSB_message":"8d4ba9ed25508671e75ce04fc7fd",
+      "SamplePos":null,
+      "df":null,
+      "tc":null,
+      "capability":null,
+      "icao":null,
+      "parity":null,
+      "surv_stat":null,
+      "NICsb":null,
+      "alt":null,
+      "Time":null,
+      "cpr_flag":null,
+      "cprLat":null,
+      "cprLong":null,
+      "latitude":null,
+      "longitude":null,
+      "altitude":null,
+      "callsign":"THY1953_SC",
+      "Subtype":null,
+      "IC":null,
+      "RESV_A":null,
+      "NAC":null,
+      "S_ew":null,
+      "V_ew":null,
+      "S_ns":null,
+      "V_ns":null,
+      "VrSrc":null,
+      "S_vr":null,
+      "Vr":null,
+      "RESV_B":null,
+      "S_Dif":null,
+      "Dif":null,
+      "S_hdg":null,
+      "Hdg":null,
+      "AS_t":null,
+      "AS":null,
+      "stype_code":null,
+      "sccc":null,
+      "lw_codes":null,
+      "op_mc":null,
+      "ver":null,
+      "NIC":null,
+      "NACp":null,
+      "SIL":null,
+      "HRD":null,
+      "bds_1":null,
+      "bds_2":null,
+      "mcp_alt":null,
+      "fms_alt":null,
+      "baro_set":null,
+      "VNAV_state":null,
+      "Alt_hold_state":null,
+      "Apr_state":null,
+      "tgt_alt_source":null,
+      "prev_lat":null,
+      "prev_long":null,
+      "isLocalUni":null
     },
     {
       "id":1893,
@@ -4369,6 +4741,7 @@
       "latitude":51.31941973152807,
       "longitude":10.863189697265625,
       "altitude":37000,
+      "callsign":null,
       "Subtype":null,
       "IC":null,
       "RESV_A":null,
@@ -4407,8 +4780,7 @@
       "tgt_alt_source":null,
       "prev_lat":null,
       "prev_long":null,
-      "isLocalUni":null,
-      "ADSB_msg":"8d4bb84758bf0235923dbb1e4d29"
+      "isLocalUni":null
     },
     {
       "id":1929,
@@ -4431,6 +4803,7 @@
       "latitude":51.07236700542902,
       "longitude":11.11114501953125,
       "altitude":38000,
+      "callsign":null,
       "Subtype":null,
       "IC":null,
       "RESV_A":null,
@@ -4469,8 +4842,7 @@
       "tgt_alt_source":null,
       "prev_lat":null,
       "prev_long":null,
-      "isLocalUni":null,
-      "ADSB_msg":"8d4ba9ed58c3857b1438e4ec2ddd"
+      "isLocalUni":null
     },
     {
       "id":1936,
@@ -4493,6 +4865,7 @@
       "latitude":51.313274836136124,
       "longitude":10.907058715820312,
       "altitude":37000,
+      "callsign":null,
       "Subtype":null,
       "IC":null,
       "RESV_A":null,
@@ -4531,8 +4904,7 @@
       "tgt_alt_source":null,
       "prev_lat":null,
       "prev_long":null,
-      "isLocalUni":null,
-      "ADSB_msg":"8d4bb84758bf05a3822e717a59a2"
+      "isLocalUni":null
     },
     {
       "id":1962,
@@ -4555,6 +4927,7 @@
       "latitude":51.313274836136124,
       "longitude":10.907058715820312,
       "altitude":37000,
+      "callsign":null,
       "Subtype":null,
       "IC":null,
       "RESV_A":null,
@@ -4593,8 +4966,7 @@
       "tgt_alt_source":null,
       "prev_lat":null,
       "prev_long":null,
-      "isLocalUni":null,
-      "ADSB_msg":"8d4bb84758bf0235543e43458a74"
+      "isLocalUni":null
     },
     {
       "id":1977,
@@ -4617,6 +4989,7 @@
       "latitude":51.07236700542902,
       "longitude":11.11114501953125,
       "altitude":38000,
+      "callsign":null,
       "Subtype":null,
       "IC":null,
       "RESV_A":null,
@@ -4655,8 +5028,7 @@
       "tgt_alt_source":null,
       "prev_lat":null,
       "prev_long":null,
-      "isLocalUni":null,
-      "ADSB_msg":"8d4ba9ed58c3820cc8484149287a"
+      "isLocalUni":null
     },
     {
       "id":2001,
@@ -4679,6 +5051,7 @@
       "latitude":51.07581187102754,
       "longitude":11.099700927734375,
       "altitude":38000,
+      "callsign":null,
       "Subtype":null,
       "IC":null,
       "RESV_A":null,
@@ -4717,8 +5090,7 @@
       "tgt_alt_source":null,
       "prev_lat":null,
       "prev_long":null,
-      "isLocalUni":null,
-      "ADSB_msg":"8d4ba9ed58c3857ba8384ec14942"
+      "isLocalUni":null
     },
     {
       "id":2056,
@@ -4741,6 +5113,7 @@
       "latitude":51.07581187102754,
       "longitude":11.099700927734375,
       "altitude":38000,
+      "callsign":null,
       "Subtype":null,
       "IC":null,
       "RESV_A":null,
@@ -4779,8 +5152,7 @@
       "tgt_alt_source":null,
       "prev_lat":null,
       "prev_long":null,
-      "isLocalUni":null,
-      "ADSB_msg":"8d4ba9ed58c3820d1847ee7c467e"
+      "isLocalUni":null
     },
     {
       "id":2096,
@@ -4803,6 +5175,7 @@
       "latitude":51.07581187102754,
       "longitude":11.099700927734375,
       "altitude":38000,
+      "callsign":null,
       "Subtype":null,
       "IC":null,
       "RESV_A":null,
@@ -4841,8 +5214,69 @@
       "tgt_alt_source":null,
       "prev_lat":null,
       "prev_long":null,
-      "isLocalUni":null,
-      "ADSB_msg":"8d4ba9ed58c3820d6447a1cb5631"
+      "isLocalUni":null
+    },
+    {
+      "id":2105,
+      "ADSB_raw":"@00003437A0F68d4bb84723407539c84820a7a5c3;",
+      "Timestamp":"00003437A0F6",
+      "ADSB_message":"8d4bb84723407539c84820a7a5c3",
+      "SamplePos":null,
+      "df":null,
+      "tc":null,
+      "capability":null,
+      "icao":null,
+      "parity":null,
+      "surv_stat":null,
+      "NICsb":null,
+      "alt":null,
+      "Time":null,
+      "cpr_flag":null,
+      "cprLat":null,
+      "cprLong":null,
+      "latitude":null,
+      "longitude":null,
+      "altitude":null,
+      "callsign":"PGT92D__#C",
+      "Subtype":null,
+      "IC":null,
+      "RESV_A":null,
+      "NAC":null,
+      "S_ew":null,
+      "V_ew":null,
+      "S_ns":null,
+      "V_ns":null,
+      "VrSrc":null,
+      "S_vr":null,
+      "Vr":null,
+      "RESV_B":null,
+      "S_Dif":null,
+      "Dif":null,
+      "S_hdg":null,
+      "Hdg":null,
+      "AS_t":null,
+      "AS":null,
+      "stype_code":null,
+      "sccc":null,
+      "lw_codes":null,
+      "op_mc":null,
+      "ver":null,
+      "NIC":null,
+      "NACp":null,
+      "SIL":null,
+      "HRD":null,
+      "bds_1":null,
+      "bds_2":null,
+      "mcp_alt":null,
+      "fms_alt":null,
+      "baro_set":null,
+      "VNAV_state":null,
+      "Alt_hold_state":null,
+      "Apr_state":null,
+      "tgt_alt_source":null,
+      "prev_lat":null,
+      "prev_long":null,
+      "isLocalUni":null
     },
     {
       "id":2119,
@@ -4865,6 +5299,7 @@
       "latitude":51.313274836136124,
       "longitude":10.907058715820312,
       "altitude":37000,
+      "callsign":null,
       "Subtype":null,
       "IC":null,
       "RESV_A":null,
@@ -4903,8 +5338,69 @@
       "tgt_alt_source":null,
       "prev_lat":null,
       "prev_long":null,
-      "isLocalUni":null,
-      "ADSB_msg":"8d4bb84758bf0234de3f49ff18f7"
+      "isLocalUni":null
+    },
+    {
+      "id":2123,
+      "ADSB_raw":"@000035085B888d4ba9ed25508671e75ce04fc7fd;",
+      "Timestamp":"000035085B88",
+      "ADSB_message":"8d4ba9ed25508671e75ce04fc7fd",
+      "SamplePos":null,
+      "df":null,
+      "tc":null,
+      "capability":null,
+      "icao":null,
+      "parity":null,
+      "surv_stat":null,
+      "NICsb":null,
+      "alt":null,
+      "Time":null,
+      "cpr_flag":null,
+      "cprLat":null,
+      "cprLong":null,
+      "latitude":null,
+      "longitude":null,
+      "altitude":null,
+      "callsign":"THY1953_SC",
+      "Subtype":null,
+      "IC":null,
+      "RESV_A":null,
+      "NAC":null,
+      "S_ew":null,
+      "V_ew":null,
+      "S_ns":null,
+      "V_ns":null,
+      "VrSrc":null,
+      "S_vr":null,
+      "Vr":null,
+      "RESV_B":null,
+      "S_Dif":null,
+      "Dif":null,
+      "S_hdg":null,
+      "Hdg":null,
+      "AS_t":null,
+      "AS":null,
+      "stype_code":null,
+      "sccc":null,
+      "lw_codes":null,
+      "op_mc":null,
+      "ver":null,
+      "NIC":null,
+      "NACp":null,
+      "SIL":null,
+      "HRD":null,
+      "bds_1":null,
+      "bds_2":null,
+      "mcp_alt":null,
+      "fms_alt":null,
+      "baro_set":null,
+      "VNAV_state":null,
+      "Alt_hold_state":null,
+      "Apr_state":null,
+      "tgt_alt_source":null,
+      "prev_lat":null,
+      "prev_long":null,
+      "isLocalUni":null
     },
     {
       "id":2171,
@@ -4927,6 +5423,7 @@
       "latitude":51.313274836136124,
       "longitude":10.907058715820312,
       "altitude":37000,
+      "callsign":null,
       "Subtype":null,
       "IC":null,
       "RESV_A":null,
@@ -4965,8 +5462,7 @@
       "tgt_alt_source":null,
       "prev_lat":null,
       "prev_long":null,
-      "isLocalUni":null,
-      "ADSB_msg":"8d4bb84758bf0234b43fa7408657"
+      "isLocalUni":null
     },
     {
       "id":2201,
@@ -4989,6 +5485,7 @@
       "latitude":51.08214297537076,
       "longitude":11.078720092773438,
       "altitude":38000,
+      "callsign":null,
       "Subtype":null,
       "IC":null,
       "RESV_A":null,
@@ -5027,8 +5524,7 @@
       "tgt_alt_source":null,
       "prev_lat":null,
       "prev_long":null,
-      "isLocalUni":null,
-      "ADSB_msg":"8d4ba9ed58c3857cb8373b68dd5c"
+      "isLocalUni":null
     },
     {
       "id":2236,
@@ -5051,6 +5547,7 @@
       "latitude":51.08214297537076,
       "longitude":11.078720092773438,
       "altitude":38000,
+      "callsign":null,
       "Subtype":null,
       "IC":null,
       "RESV_A":null,
@@ -5089,8 +5586,69 @@
       "tgt_alt_source":null,
       "prev_lat":null,
       "prev_long":null,
-      "isLocalUni":null,
-      "ADSB_msg":"8d4ba9ed58c3820e2a46d68c8db4"
+      "isLocalUni":null
+    },
+    {
+      "id":2238,
+      "ADSB_raw":"@000037BCFC4E8d4bb84723407539c84820a7a5c3;",
+      "Timestamp":"000037BCFC4E",
+      "ADSB_message":"8d4bb84723407539c84820a7a5c3",
+      "SamplePos":null,
+      "df":null,
+      "tc":null,
+      "capability":null,
+      "icao":null,
+      "parity":null,
+      "surv_stat":null,
+      "NICsb":null,
+      "alt":null,
+      "Time":null,
+      "cpr_flag":null,
+      "cprLat":null,
+      "cprLong":null,
+      "latitude":null,
+      "longitude":null,
+      "altitude":null,
+      "callsign":"PGT92D__#C",
+      "Subtype":null,
+      "IC":null,
+      "RESV_A":null,
+      "NAC":null,
+      "S_ew":null,
+      "V_ew":null,
+      "S_ns":null,
+      "V_ns":null,
+      "VrSrc":null,
+      "S_vr":null,
+      "Vr":null,
+      "RESV_B":null,
+      "S_Dif":null,
+      "Dif":null,
+      "S_hdg":null,
+      "Hdg":null,
+      "AS_t":null,
+      "AS":null,
+      "stype_code":null,
+      "sccc":null,
+      "lw_codes":null,
+      "op_mc":null,
+      "ver":null,
+      "NIC":null,
+      "NACp":null,
+      "SIL":null,
+      "HRD":null,
+      "bds_1":null,
+      "bds_2":null,
+      "mcp_alt":null,
+      "fms_alt":null,
+      "baro_set":null,
+      "VNAV_state":null,
+      "Alt_hold_state":null,
+      "Apr_state":null,
+      "tgt_alt_source":null,
+      "prev_lat":null,
+      "prev_long":null,
+      "isLocalUni":null
     },
     {
       "id":2265,
@@ -5113,6 +5671,7 @@
       "latitude":51.307455806408896,
       "longitude":10.949020385742188,
       "altitude":37000,
+      "callsign":null,
       "Subtype":null,
       "IC":null,
       "RESV_A":null,
@@ -5151,8 +5710,7 @@
       "tgt_alt_source":null,
       "prev_lat":null,
       "prev_long":null,
-      "isLocalUni":null,
-      "ADSB_msg":"8d4bb84758bf05a2883097955746"
+      "isLocalUni":null
     },
     {
       "id":2309,
@@ -5175,6 +5733,7 @@
       "latitude":51.08605336334745,
       "longitude":11.065750122070312,
       "altitude":38000,
+      "callsign":null,
       "Subtype":null,
       "IC":null,
       "RESV_A":null,
@@ -5213,8 +5772,7 @@
       "tgt_alt_source":null,
       "prev_lat":null,
       "prev_long":null,
-      "isLocalUni":null,
-      "ADSB_msg":"8d4ba9ed58c3857d603691989c6f"
+      "isLocalUni":null
     },
     {
       "id":2310,
@@ -5237,6 +5795,7 @@
       "latitude":51.30633855270127,
       "longitude":10.956954956054688,
       "altitude":37000,
+      "callsign":null,
       "Subtype":null,
       "IC":null,
       "RESV_A":null,
@@ -5275,8 +5834,7 @@
       "tgt_alt_source":null,
       "prev_lat":null,
       "prev_long":null,
-      "isLocalUni":null,
-      "ADSB_msg":"8d4bb84758bf05a25830ff2add15"
+      "isLocalUni":null
     },
     {
       "id":2340,
@@ -5299,6 +5857,7 @@
       "latitude":51.087775796146715,
       "longitude":11.05987548828125,
       "altitude":38000,
+      "callsign":null,
       "Subtype":null,
       "IC":null,
       "RESV_A":null,
@@ -5337,8 +5896,7 @@
       "tgt_alt_source":null,
       "prev_lat":null,
       "prev_long":null,
-      "isLocalUni":null,
-      "ADSB_msg":"8d4ba9ed58c3857daa364476c35d"
+      "isLocalUni":null
     },
     {
       "id":2373,
@@ -5361,6 +5919,7 @@
       "latitude":51.08963788565943,
       "longitude":11.053848266601562,
       "altitude":38000,
+      "callsign":null,
       "Subtype":null,
       "IC":null,
       "RESV_A":null,
@@ -5399,8 +5958,7 @@
       "tgt_alt_source":null,
       "prev_lat":null,
       "prev_long":null,
-      "isLocalUni":null,
-      "ADSB_msg":"8d4ba9ed58c3857dfa35f5caba3e"
+      "isLocalUni":null
     },
     {
       "id":2389,
@@ -5423,6 +5981,7 @@
       "latitude":51.30387128409693,
       "longitude":10.9747314453125,
       "altitude":37000,
+      "callsign":null,
       "Subtype":null,
       "IC":null,
       "RESV_A":null,
@@ -5461,8 +6020,7 @@
       "tgt_alt_source":null,
       "prev_lat":null,
       "prev_long":null,
-      "isLocalUni":null,
-      "ADSB_msg":"8d4bb84758bf05a1ee31e8f9228e"
+      "isLocalUni":null
     },
     {
       "id":2436,
@@ -5485,6 +6043,7 @@
       "latitude":51.30340576171875,
       "longitude":10.977935791015625,
       "altitude":37000,
+      "callsign":null,
       "Subtype":null,
       "IC":null,
       "RESV_A":null,
@@ -5523,8 +6082,7 @@
       "tgt_alt_source":null,
       "prev_lat":null,
       "prev_long":null,
-      "isLocalUni":null,
-      "ADSB_msg":"8d4bb84758bf05a1da321241958c"
+      "isLocalUni":null
     },
     {
       "id":2490,
@@ -5547,6 +6105,7 @@
       "latitude":51.093315512447035,
       "longitude":11.041488647460938,
       "altitude":38000,
+      "callsign":null,
       "Subtype":null,
       "IC":null,
       "RESV_A":null,
@@ -5585,8 +6144,7 @@
       "tgt_alt_source":null,
       "prev_lat":null,
       "prev_long":null,
-      "isLocalUni":null,
-      "ADSB_msg":"8d4ba9ed58c3857e98355364726f"
+      "isLocalUni":null
     },
     {
       "id":2533,
@@ -5609,6 +6167,7 @@
       "latitude":51.30340576171875,
       "longitude":10.977935791015625,
       "altitude":37000,
+      "callsign":null,
       "Subtype":null,
       "IC":null,
       "RESV_A":null,
@@ -5647,8 +6206,7 @@
       "tgt_alt_source":null,
       "prev_lat":null,
       "prev_long":null,
-      "isLocalUni":null,
-      "ADSB_msg":"8d4bb84758bf023382424a390e89"
+      "isLocalUni":null
     },
     {
       "id":2542,
@@ -5671,6 +6229,7 @@
       "latitude":51.09499139300847,
       "longitude":11.035919189453125,
       "altitude":38000,
+      "callsign":null,
       "Subtype":null,
       "IC":null,
       "RESV_A":null,
@@ -5709,8 +6268,7 @@
       "tgt_alt_source":null,
       "prev_lat":null,
       "prev_long":null,
-      "isLocalUni":null,
-      "ADSB_msg":"8d4ba9ed58c3857ee0350ae4f7d1"
+      "isLocalUni":null
     },
     {
       "id":2551,
@@ -5733,6 +6291,7 @@
       "latitude":51.09676037804555,
       "longitude":11.030120849609375,
       "altitude":38000,
+      "callsign":null,
       "Subtype":null,
       "IC":null,
       "RESV_A":null,
@@ -5771,8 +6330,7 @@
       "tgt_alt_source":null,
       "prev_lat":null,
       "prev_long":null,
-      "isLocalUni":null,
-      "ADSB_msg":"8d4ba9ed58c3857f2c34befe176f"
+      "isLocalUni":null
     },
     {
       "id":2604,
@@ -5795,6 +6353,7 @@
       "latitude":51.29991434388241,
       "longitude":11.0028076171875,
       "altitude":37000,
+      "callsign":null,
       "Subtype":null,
       "IC":null,
       "RESV_A":null,
@@ -5833,8 +6392,7 @@
       "tgt_alt_source":null,
       "prev_lat":null,
       "prev_long":null,
-      "isLocalUni":null,
-      "ADSB_msg":"8d4bb84758bf05a1443358396c28"
+      "isLocalUni":null
     },
     {
       "id":2632,
@@ -5857,6 +6415,7 @@
       "latitude":51.299309164790785,
       "longitude":11.007308959960938,
       "altitude":37000,
+      "callsign":null,
       "Subtype":null,
       "IC":null,
       "RESV_A":null,
@@ -5895,8 +6454,7 @@
       "tgt_alt_source":null,
       "prev_lat":null,
       "prev_long":null,
-      "isLocalUni":null,
-      "ADSB_msg":"8f4bb84758bf05a12a3393ff4cf3"
+      "isLocalUni":null
     },
     {
       "id":2659,
@@ -5919,6 +6477,7 @@
       "latitude":51.299029851363876,
       "longitude":11.009140014648438,
       "altitude":37000,
+      "callsign":null,
       "Subtype":null,
       "IC":null,
       "RESV_A":null,
@@ -5957,8 +6516,7 @@
       "tgt_alt_source":null,
       "prev_lat":null,
       "prev_long":null,
-      "isLocalUni":null,
-      "ADSB_msg":"8f4bb84758bf05a11e33ab5174ca"
+      "isLocalUni":null
     },
     {
       "id":2683,
@@ -5981,6 +6539,7 @@
       "latitude":51.299029851363876,
       "longitude":11.009140014648438,
       "altitude":37000,
+      "callsign":null,
       "Subtype":null,
       "IC":null,
       "RESV_A":null,
@@ -6019,8 +6578,7 @@
       "tgt_alt_source":null,
       "prev_lat":null,
       "prev_long":null,
-      "isLocalUni":null,
-      "ADSB_msg":"8f4bb84758bf0232fe436ce6ca50"
+      "isLocalUni":null
     },
     {
       "id":2691,
@@ -6043,6 +6601,7 @@
       "latitude":51.2985643289857,
       "longitude":11.012344360351562,
       "altitude":37000,
+      "callsign":null,
       "Subtype":null,
       "IC":null,
       "RESV_A":null,
@@ -6081,8 +6640,7 @@
       "tgt_alt_source":null,
       "prev_lat":null,
       "prev_long":null,
-      "isLocalUni":null,
-      "ADSB_msg":"8f4bb84758bf05a10a33d5b99797"
+      "isLocalUni":null
     },
     {
       "id":2708,
@@ -6105,6 +6663,7 @@
       "latitude":51.29833156779661,
       "longitude":11.013946533203125,
       "altitude":37000,
+      "callsign":null,
       "Subtype":null,
       "IC":null,
       "RESV_A":null,
@@ -6143,8 +6702,7 @@
       "tgt_alt_source":null,
       "prev_lat":null,
       "prev_long":null,
-      "isLocalUni":null,
-      "ADSB_msg":"8f4bb84758bf05a10033ea321c3d"
+      "isLocalUni":null
     },
     {
       "id":2735,
@@ -6167,6 +6725,7 @@
       "latitude":51.101927676443324,
       "longitude":11.012954711914062,
       "altitude":38000,
+      "callsign":null,
       "Subtype":null,
       "IC":null,
       "RESV_A":null,
@@ -6205,8 +6764,7 @@
       "tgt_alt_source":null,
       "prev_lat":null,
       "prev_long":null,
-      "isLocalUni":null,
-      "ADSB_msg":"8d4ba9ed58c385800a33ddf2e60e"
+      "isLocalUni":null
     },
     {
       "id":2778,
@@ -6229,6 +6787,7 @@
       "latitude":51.101927676443324,
       "longitude":11.012954711914062,
       "altitude":38000,
+      "callsign":null,
       "Subtype":null,
       "IC":null,
       "RESV_A":null,
@@ -6267,8 +6826,7 @@
       "tgt_alt_source":null,
       "prev_lat":null,
       "prev_long":null,
-      "isLocalUni":null,
-      "ADSB_msg":"8d4ba9ed58c382118a4360dfe836"
+      "isLocalUni":null
     },
     {
       "id":2785,
@@ -6291,6 +6849,7 @@
       "latitude":51.29833156779661,
       "longitude":11.013946533203125,
       "altitude":37000,
+      "callsign":null,
       "Subtype":null,
       "IC":null,
       "RESV_A":null,
@@ -6329,8 +6888,7 @@
       "tgt_alt_source":null,
       "prev_lat":null,
       "prev_long":null,
-      "isLocalUni":null,
-      "ADSB_msg":"8f4bb84758bf0232c243eddff3ac"
+      "isLocalUni":null
     },
     {
       "id":2804,
@@ -6353,6 +6911,7 @@
       "latitude":51.10365010924258,
       "longitude":11.007080078125,
       "altitude":38000,
+      "callsign":null,
       "Subtype":null,
       "IC":null,
       "RESV_A":null,
@@ -6391,8 +6950,7 @@
       "tgt_alt_source":null,
       "prev_lat":null,
       "prev_long":null,
-      "isLocalUni":null,
-      "ADSB_msg":"8d4ba9ed58c385805433901b3ef1"
+      "isLocalUni":null
     },
     {
       "id":2821,
@@ -6415,6 +6973,7 @@
       "latitude":51.296888448424255,
       "longitude":11.024322509765625,
       "altitude":37000,
+      "callsign":null,
       "Subtype":null,
       "IC":null,
       "RESV_A":null,
@@ -6453,8 +7012,7 @@
       "tgt_alt_source":null,
       "prev_lat":null,
       "prev_long":null,
-      "isLocalUni":null,
-      "ADSB_msg":"8f4bb84758bf05a0c234724f03e7"
+      "isLocalUni":null
     },
     {
       "id":2849,
@@ -6477,6 +7035,7 @@
       "latitude":51.296469478283896,
       "longitude":11.02752685546875,
       "altitude":37000,
+      "callsign":null,
       "Subtype":null,
       "IC":null,
       "RESV_A":null,
@@ -6515,8 +7074,7 @@
       "tgt_alt_source":null,
       "prev_lat":null,
       "prev_long":null,
-      "isLocalUni":null,
-      "ADSB_msg":"8f4bb84758bf05a0b0349c437b5f"
+      "isLocalUni":null
     },
     {
       "id":2927,
@@ -6539,6 +7097,7 @@
       "latitude":51.10365010924258,
       "longitude":11.007080078125,
       "altitude":38000,
+      "callsign":null,
       "Subtype":null,
       "IC":null,
       "RESV_A":null,
@@ -6577,8 +7136,7 @@
       "tgt_alt_source":null,
       "prev_lat":null,
       "prev_long":null,
-      "isLocalUni":null,
-      "ADSB_msg":"8d4ba9ed58c38212744271e869da"
+      "isLocalUni":null
     },
     {
       "id":2935,
@@ -6601,6 +7159,7 @@
       "latitude":51.296469478283896,
       "longitude":11.02752685546875,
       "altitude":37000,
+      "callsign":null,
       "Subtype":null,
       "IC":null,
       "RESV_A":null,
@@ -6639,8 +7198,7 @@
       "tgt_alt_source":null,
       "prev_lat":null,
       "prev_long":null,
-      "isLocalUni":null,
-      "ADSB_msg":"8f4bb84758bf02324a44f88e596e"
+      "isLocalUni":null
     },
     {
       "id":2962,
@@ -6663,6 +7221,7 @@
       "latitude":51.296469478283896,
       "longitude":11.02752685546875,
       "altitude":37000,
+      "callsign":null,
       "Subtype":null,
       "IC":null,
       "RESV_A":null,
@@ -6701,8 +7260,7 @@
       "tgt_alt_source":null,
       "prev_lat":null,
       "prev_long":null,
-      "isLocalUni":null,
-      "ADSB_msg":"8f4bb84758bf023240450b0f12be"
+      "isLocalUni":null
     },
     {
       "id":2976,
@@ -6725,6 +7283,7 @@
       "latitude":51.10909672106727,
       "longitude":10.98907470703125,
       "altitude":38000,
+      "callsign":null,
       "Subtype":null,
       "IC":null,
       "RESV_A":null,
@@ -6763,8 +7322,7 @@
       "tgt_alt_source":null,
       "prev_lat":null,
       "prev_long":null,
-      "isLocalUni":null,
-      "ADSB_msg":"8d4ba9ed58c385813e32a485598d"
+      "isLocalUni":null
     },
     {
       "id":2982,
@@ -6787,6 +7345,7 @@
       "latitude":51.296469478283896,
       "longitude":11.02752685546875,
       "altitude":37000,
+      "callsign":null,
       "Subtype":null,
       "IC":null,
       "RESV_A":null,
@@ -6825,8 +7384,7 @@
       "tgt_alt_source":null,
       "prev_lat":null,
       "prev_long":null,
-      "isLocalUni":null,
-      "ADSB_msg":"8f4bb84758bf023238451f73a833"
+      "isLocalUni":null
     },
     {
       "id":3002,
@@ -6849,6 +7407,7 @@
       "latitude":51.294002209679554,
       "longitude":11.045074462890625,
       "altitude":37000,
+      "callsign":null,
       "Subtype":null,
       "IC":null,
       "RESV_A":null,
@@ -6887,8 +7446,7 @@
       "tgt_alt_source":null,
       "prev_lat":null,
       "prev_long":null,
-      "isLocalUni":null,
-      "ADSB_msg":"8f4bb84758bf05a046358299ff06"
+      "isLocalUni":null
     },
     {
       "id":3018,
@@ -6911,6 +7469,7 @@
       "latitude":51.294002209679554,
       "longitude":11.045074462890625,
       "altitude":37000,
+      "callsign":null,
       "Subtype":null,
       "IC":null,
       "RESV_A":null,
@@ -6949,8 +7508,7 @@
       "tgt_alt_source":null,
       "prev_lat":null,
       "prev_long":null,
-      "isLocalUni":null,
-      "ADSB_msg":"8f4bb84758bf023222455027c581"
+      "isLocalUni":null
     },
     {
       "id":3039,
@@ -6973,6 +7531,7 @@
       "latitude":51.11063294491525,
       "longitude":10.98388671875,
       "altitude":38000,
+      "callsign":null,
       "Subtype":null,
       "IC":null,
       "RESV_A":null,
@@ -7011,8 +7570,7 @@
       "tgt_alt_source":null,
       "prev_lat":null,
       "prev_long":null,
-      "isLocalUni":null,
-      "ADSB_msg":"8d4ba9ed58c38581803260b18301"
+      "isLocalUni":null
     },
     {
       "id":3066,
@@ -7035,6 +7593,7 @@
       "latitude":51.294002209679554,
       "longitude":11.045074462890625,
       "altitude":37000,
+      "callsign":null,
       "Subtype":null,
       "IC":null,
       "RESV_A":null,
@@ -7073,8 +7632,7 @@
       "tgt_alt_source":null,
       "prev_lat":null,
       "prev_long":null,
-      "isLocalUni":null,
-      "ADSB_msg":"8f4bb84758bf02320445904ac58e"
+      "isLocalUni":null
     },
     {
       "id":3149,
@@ -7097,6 +7655,7 @@
       "latitude":51.11063294491525,
       "longitude":10.98388671875,
       "altitude":38000,
+      "callsign":null,
       "Subtype":null,
       "IC":null,
       "RESV_A":null,
@@ -7135,8 +7694,7 @@
       "tgt_alt_source":null,
       "prev_lat":null,
       "prev_long":null,
-      "isLocalUni":null,
-      "ADSB_msg":"8d4ba9ed58c382135641878ad647"
+      "isLocalUni":null
     },
     {
       "id":3179,
@@ -7159,6 +7717,7 @@
       "latitude":51.11421746722722,
       "longitude":10.97198486328125,
       "altitude":38000,
+      "callsign":null,
       "Subtype":null,
       "IC":null,
       "RESV_A":null,
@@ -7197,8 +7756,7 @@
       "tgt_alt_source":null,
       "prev_lat":null,
       "prev_long":null,
-      "isLocalUni":null,
-      "ADSB_msg":"8d4ba9ed58c385821a31c49b2705"
+      "isLocalUni":null
     },
     {
       "id":3196,
@@ -7221,6 +7779,7 @@
       "latitude":51.294002209679554,
       "longitude":11.045074462890625,
       "altitude":37000,
+      "callsign":null,
       "Subtype":null,
       "IC":null,
       "RESV_A":null,
@@ -7259,8 +7818,7 @@
       "tgt_alt_source":null,
       "prev_lat":null,
       "prev_long":null,
-      "isLocalUni":null,
-      "ADSB_msg":"8d4bb84758bf0231b6463afb091a"
+      "isLocalUni":null
     },
     {
       "id":3201,
@@ -7283,6 +7841,7 @@
       "latitude":51.11421746722722,
       "longitude":10.97198486328125,
       "altitude":38000,
+      "callsign":null,
       "Subtype":null,
       "IC":null,
       "RESV_A":null,
@@ -7321,8 +7880,69 @@
       "tgt_alt_source":null,
       "prev_lat":null,
       "prev_long":null,
-      "isLocalUni":null,
-      "ADSB_msg":"8d4ba9ed58c38213aa41312de208"
+      "isLocalUni":null
+    },
+    {
+      "id":3204,
+      "ADSB_raw":"@0000508AD30C8d4ba9ed25508671e75ce04fc7fd;",
+      "Timestamp":"0000508AD30C",
+      "ADSB_message":"8d4ba9ed25508671e75ce04fc7fd",
+      "SamplePos":null,
+      "df":null,
+      "tc":null,
+      "capability":null,
+      "icao":null,
+      "parity":null,
+      "surv_stat":null,
+      "NICsb":null,
+      "alt":null,
+      "Time":null,
+      "cpr_flag":null,
+      "cprLat":null,
+      "cprLong":null,
+      "latitude":null,
+      "longitude":null,
+      "altitude":null,
+      "callsign":"THY1953_SC",
+      "Subtype":null,
+      "IC":null,
+      "RESV_A":null,
+      "NAC":null,
+      "S_ew":null,
+      "V_ew":null,
+      "S_ns":null,
+      "V_ns":null,
+      "VrSrc":null,
+      "S_vr":null,
+      "Vr":null,
+      "RESV_B":null,
+      "S_Dif":null,
+      "Dif":null,
+      "S_hdg":null,
+      "Hdg":null,
+      "AS_t":null,
+      "AS":null,
+      "stype_code":null,
+      "sccc":null,
+      "lw_codes":null,
+      "op_mc":null,
+      "ver":null,
+      "NIC":null,
+      "NACp":null,
+      "SIL":null,
+      "HRD":null,
+      "bds_1":null,
+      "bds_2":null,
+      "mcp_alt":null,
+      "fms_alt":null,
+      "baro_set":null,
+      "VNAV_state":null,
+      "Alt_hold_state":null,
+      "Apr_state":null,
+      "tgt_alt_source":null,
+      "prev_lat":null,
+      "prev_long":null,
+      "isLocalUni":null
     },
     {
       "id":3223,
@@ -7345,6 +7965,7 @@
       "latitude":51.11607955673993,
       "longitude":10.965805053710938,
       "altitude":38000,
+      "callsign":null,
       "Subtype":null,
       "IC":null,
       "RESV_A":null,
@@ -7383,8 +8004,7 @@
       "tgt_alt_source":null,
       "prev_lat":null,
       "prev_long":null,
-      "isLocalUni":null,
-      "ADSB_msg":"8d4ba9ed58c385826a31737010e2"
+      "isLocalUni":null
     },
     {
       "id":3238,
@@ -7407,6 +8027,7 @@
       "latitude":51.11607955673993,
       "longitude":10.965805053710938,
       "altitude":38000,
+      "callsign":null,
       "Subtype":null,
       "IC":null,
       "RESV_A":null,
@@ -7445,8 +8066,7 @@
       "tgt_alt_source":null,
       "prev_lat":null,
       "prev_long":null,
-      "isLocalUni":null,
-      "ADSB_msg":"8d4ba9ed58c38213f240e8e110df"
+      "isLocalUni":null
     },
     {
       "id":3332,
@@ -7469,6 +8089,7 @@
       "latitude":51.294002209679554,
       "longitude":11.045074462890625,
       "altitude":37000,
+      "callsign":null,
       "Subtype":null,
       "IC":null,
       "RESV_A":null,
@@ -7507,8 +8128,7 @@
       "tgt_alt_source":null,
       "prev_lat":null,
       "prev_long":null,
-      "isLocalUni":null,
-      "ADSB_msg":"8d4bb84758bf02316646ebbd2084"
+      "isLocalUni":null
     },
     {
       "id":3342,
@@ -7531,6 +8151,7 @@
       "latitude":51.11607955673993,
       "longitude":10.965805053710938,
       "altitude":38000,
+      "callsign":null,
       "Subtype":null,
       "IC":null,
       "RESV_A":null,
@@ -7569,8 +8190,7 @@
       "tgt_alt_source":null,
       "prev_lat":null,
       "prev_long":null,
-      "isLocalUni":null,
-      "ADSB_msg":"8d4ba9ed58c382143c409bed0f0d"
+      "isLocalUni":null
     },
     {
       "id":3364,
@@ -7593,6 +8213,7 @@
       "latitude":51.28892801575741,
       "longitude":11.0809326171875,
       "altitude":37000,
+      "callsign":null,
       "Subtype":null,
       "IC":null,
       "RESV_A":null,
@@ -7631,8 +8252,7 @@
       "tgt_alt_source":null,
       "prev_lat":null,
       "prev_long":null,
-      "isLocalUni":null,
-      "ADSB_msg":"8d4bb84758bf059f6c37584d3a06"
+      "isLocalUni":null
     },
     {
       "id":3369,
@@ -7655,6 +8275,7 @@
       "latitude":51.11952442233845,
       "longitude":10.95428466796875,
       "altitude":38000,
+      "callsign":null,
       "Subtype":null,
       "IC":null,
       "RESV_A":null,
@@ -7693,8 +8314,7 @@
       "tgt_alt_source":null,
       "prev_lat":null,
       "prev_long":null,
-      "isLocalUni":null,
-      "ADSB_msg":"8d4ba9ed58c38582fe30dc876be3"
+      "isLocalUni":null
     },
     {
       "id":3377,
@@ -7717,6 +8337,7 @@
       "latitude":51.28892801575741,
       "longitude":11.0809326171875,
       "altitude":37000,
+      "callsign":null,
       "Subtype":null,
       "IC":null,
       "RESV_A":null,
@@ -7755,8 +8376,7 @@
       "tgt_alt_source":null,
       "prev_lat":null,
       "prev_long":null,
-      "isLocalUni":null,
-      "ADSB_msg":"8d4bb84758bf0231464731f25822"
+      "isLocalUni":null
     },
     {
       "id":3386,
@@ -7779,6 +8399,7 @@
       "latitude":51.11952442233845,
       "longitude":10.95428466796875,
       "altitude":38000,
+      "callsign":null,
       "Subtype":null,
       "IC":null,
       "RESV_A":null,
@@ -7817,8 +8438,7 @@
       "tgt_alt_source":null,
       "prev_lat":null,
       "prev_long":null,
-      "isLocalUni":null,
-      "ADSB_msg":"8d4ba9ed58c3821488404e53cbda"
+      "isLocalUni":null
     },
     {
       "id":3424,
@@ -7841,6 +8461,7 @@
       "latitude":51.28892801575741,
       "longitude":11.0809326171875,
       "altitude":37000,
+      "callsign":null,
       "Subtype":null,
       "IC":null,
       "RESV_A":null,
@@ -7879,8 +8500,7 @@
       "tgt_alt_source":null,
       "prev_lat":null,
       "prev_long":null,
-      "isLocalUni":null,
-      "ADSB_msg":"8d4bb84758bf0231264778c1db5c"
+      "isLocalUni":null
     },
     {
       "id":3425,
@@ -7903,6 +8523,7 @@
       "latitude":51.12124685513771,
       "longitude":10.948486328125,
       "altitude":38000,
+      "callsign":null,
       "Subtype":null,
       "IC":null,
       "RESV_A":null,
@@ -7941,8 +8562,7 @@
       "tgt_alt_source":null,
       "prev_lat":null,
       "prev_long":null,
-      "isLocalUni":null,
-      "ADSB_msg":"8d4ba9ed58c38583483090f19898"
+      "isLocalUni":null
     },
     {
       "id":3462,
@@ -7965,6 +8585,7 @@
       "latitude":51.123062392412606,
       "longitude":10.942535400390625,
       "altitude":38000,
+      "callsign":null,
       "Subtype":null,
       "IC":null,
       "RESV_A":null,
@@ -8003,8 +8624,69 @@
       "tgt_alt_source":null,
       "prev_lat":null,
       "prev_long":null,
-      "isLocalUni":null,
-      "ADSB_msg":"8d4ba9ed58c385839630420a029a"
+      "isLocalUni":null
+    },
+    {
+      "id":3503,
+      "ADSB_raw":"@000056EF517A8d4ba9ed25508671e75ce04fc7fd;",
+      "Timestamp":"000056EF517A",
+      "ADSB_message":"8d4ba9ed25508671e75ce04fc7fd",
+      "SamplePos":null,
+      "df":null,
+      "tc":null,
+      "capability":null,
+      "icao":null,
+      "parity":null,
+      "surv_stat":null,
+      "NICsb":null,
+      "alt":null,
+      "Time":null,
+      "cpr_flag":null,
+      "cprLat":null,
+      "cprLong":null,
+      "latitude":null,
+      "longitude":null,
+      "altitude":null,
+      "callsign":"THY1953_SC",
+      "Subtype":null,
+      "IC":null,
+      "RESV_A":null,
+      "NAC":null,
+      "S_ew":null,
+      "V_ew":null,
+      "S_ns":null,
+      "V_ns":null,
+      "VrSrc":null,
+      "S_vr":null,
+      "Vr":null,
+      "RESV_B":null,
+      "S_Dif":null,
+      "Dif":null,
+      "S_hdg":null,
+      "Hdg":null,
+      "AS_t":null,
+      "AS":null,
+      "stype_code":null,
+      "sccc":null,
+      "lw_codes":null,
+      "op_mc":null,
+      "ver":null,
+      "NIC":null,
+      "NACp":null,
+      "SIL":null,
+      "HRD":null,
+      "bds_1":null,
+      "bds_2":null,
+      "mcp_alt":null,
+      "fms_alt":null,
+      "baro_set":null,
+      "VNAV_state":null,
+      "Alt_hold_state":null,
+      "Apr_state":null,
+      "tgt_alt_source":null,
+      "prev_lat":null,
+      "prev_long":null,
+      "isLocalUni":null
     },
     {
       "id":3509,
@@ -8027,6 +8709,7 @@
       "latitude":51.17831989870233,
       "longitude":11.431655883789062,
       "altitude":27725,
+      "callsign":null,
       "Subtype":null,
       "IC":null,
       "RESV_A":null,
@@ -8065,8 +8748,7 @@
       "tgt_alt_source":null,
       "prev_lat":null,
       "prev_long":null,
-      "isLocalUni":null,
-      "ADSB_msg":"8d781343588fd2233a5d99fd55bf"
+      "isLocalUni":null
     },
     {
       "id":3538,
@@ -8089,6 +8771,7 @@
       "latitude":51.28892801575741,
       "longitude":11.0809326171875,
       "altitude":37000,
+      "callsign":null,
       "Subtype":null,
       "IC":null,
       "RESV_A":null,
@@ -8127,8 +8810,7 @@
       "tgt_alt_source":null,
       "prev_lat":null,
       "prev_long":null,
-      "isLocalUni":null,
-      "ADSB_msg":"8d4bb84758bf0230d04834679cf5"
+      "isLocalUni":null
     },
     {
       "id":3553,
@@ -8151,6 +8833,7 @@
       "latitude":51.285529702396715,
       "longitude":11.105117797851562,
       "altitude":37000,
+      "callsign":null,
       "Subtype":null,
       "IC":null,
       "RESV_A":null,
@@ -8189,8 +8872,7 @@
       "tgt_alt_source":null,
       "prev_lat":null,
       "prev_long":null,
-      "isLocalUni":null,
-      "ADSB_msg":"8d4bb84758bf059eda3895997734"
+      "isLocalUni":null
     },
     {
       "id":3600,
@@ -8213,6 +8895,7 @@
       "latitude":51.28501762778072,
       "longitude":11.10870361328125,
       "altitude":37000,
+      "callsign":null,
       "Subtype":null,
       "IC":null,
       "RESV_A":null,
@@ -8251,8 +8934,7 @@
       "tgt_alt_source":null,
       "prev_lat":null,
       "prev_long":null,
-      "isLocalUni":null,
-      "ADSB_msg":"8d4bb84758bf059ec438c4faff1b"
+      "isLocalUni":null
     },
     {
       "id":3605,
@@ -8275,6 +8957,7 @@
       "latitude":51.126833123675844,
       "longitude":10.929946899414062,
       "altitude":38000,
+      "callsign":null,
       "Subtype":null,
       "IC":null,
       "RESV_A":null,
@@ -8313,8 +8996,7 @@
       "tgt_alt_source":null,
       "prev_lat":null,
       "prev_long":null,
-      "isLocalUni":null,
-      "ADSB_msg":"8d4ba9ed58c38584382f9d758299"
+      "isLocalUni":null
     },
     {
       "id":3731,
@@ -8337,6 +9019,7 @@
       "latitude":51.126833123675844,
       "longitude":10.929946899414062,
       "altitude":38000,
+      "callsign":null,
       "Subtype":null,
       "IC":null,
       "RESV_A":null,
@@ -8375,8 +9058,7 @@
       "tgt_alt_source":null,
       "prev_lat":null,
       "prev_long":null,
-      "isLocalUni":null,
-      "ADSB_msg":"8d4ba9ed58c38216403e89076f14"
+      "isLocalUni":null
     },
     {
       "id":3814,
@@ -8399,6 +9081,7 @@
       "latitude":51.126833123675844,
       "longitude":10.929946899414062,
       "altitude":38000,
+      "callsign":null,
       "Subtype":null,
       "IC":null,
       "RESV_A":null,
@@ -8437,8 +9120,69 @@
       "tgt_alt_source":null,
       "prev_lat":null,
       "prev_long":null,
-      "isLocalUni":null,
-      "ADSB_msg":"8d4ba9ed58c38216903e3643501b"
+      "isLocalUni":null
+    },
+    {
+      "id":3827,
+      "ADSB_raw":"@00005E15CE788d4ba9ed25508671e75ce04fc7fd;",
+      "Timestamp":"00005E15CE78",
+      "ADSB_message":"8d4ba9ed25508671e75ce04fc7fd",
+      "SamplePos":null,
+      "df":null,
+      "tc":null,
+      "capability":null,
+      "icao":null,
+      "parity":null,
+      "surv_stat":null,
+      "NICsb":null,
+      "alt":null,
+      "Time":null,
+      "cpr_flag":null,
+      "cprLat":null,
+      "cprLong":null,
+      "latitude":null,
+      "longitude":null,
+      "altitude":null,
+      "callsign":"THY1953_SC",
+      "Subtype":null,
+      "IC":null,
+      "RESV_A":null,
+      "NAC":null,
+      "S_ew":null,
+      "V_ew":null,
+      "S_ns":null,
+      "V_ns":null,
+      "VrSrc":null,
+      "S_vr":null,
+      "Vr":null,
+      "RESV_B":null,
+      "S_Dif":null,
+      "Dif":null,
+      "S_hdg":null,
+      "Hdg":null,
+      "AS_t":null,
+      "AS":null,
+      "stype_code":null,
+      "sccc":null,
+      "lw_codes":null,
+      "op_mc":null,
+      "ver":null,
+      "NIC":null,
+      "NACp":null,
+      "SIL":null,
+      "HRD":null,
+      "bds_1":null,
+      "bds_2":null,
+      "mcp_alt":null,
+      "fms_alt":null,
+      "baro_set":null,
+      "VNAV_state":null,
+      "Alt_hold_state":null,
+      "Apr_state":null,
+      "tgt_alt_source":null,
+      "prev_lat":null,
+      "prev_long":null,
+      "isLocalUni":null
     },
     {
       "id":3833,
@@ -8461,6 +9205,7 @@
       "latitude":51.13321078025688,
       "longitude":10.908584594726562,
       "altitude":38000,
+      "callsign":null,
       "Subtype":null,
       "IC":null,
       "RESV_A":null,
@@ -8499,8 +9244,7 @@
       "tgt_alt_source":null,
       "prev_lat":null,
       "prev_long":null,
-      "isLocalUni":null,
-      "ADSB_msg":"8d4ba9ed58c385854a2e85598a17"
+      "isLocalUni":null
     },
     {
       "id":3858,
@@ -8523,6 +9267,7 @@
       "latitude":51.28501762778072,
       "longitude":11.10870361328125,
       "altitude":37000,
+      "callsign":null,
       "Subtype":null,
       "IC":null,
       "RESV_A":null,
@@ -8561,8 +9306,7 @@
       "tgt_alt_source":null,
       "prev_lat":null,
       "prev_long":null,
-      "isLocalUni":null,
-      "ADSB_msg":"8d4bb84758bf02300649ef032d1a"
+      "isLocalUni":null
     },
     {
       "id":3969,
@@ -8585,6 +9329,7 @@
       "latitude":51.136795302568856,
       "longitude":10.896530151367188,
       "altitude":38000,
+      "callsign":null,
       "Subtype":null,
       "IC":null,
       "RESV_A":null,
@@ -8623,8 +9368,7 @@
       "tgt_alt_source":null,
       "prev_lat":null,
       "prev_long":null,
-      "isLocalUni":null,
-      "ADSB_msg":"8d4ba9ed58c38585e42de7a4e156"
+      "isLocalUni":null
     },
     {
       "id":3982,
@@ -8647,6 +9391,7 @@
       "latitude":51.19284419690148,
       "longitude":11.471328735351562,
       "altitude":27375,
+      "callsign":null,
       "Subtype":null,
       "IC":null,
       "RESV_A":null,
@@ -8685,8 +9430,7 @@
       "tgt_alt_source":null,
       "prev_lat":null,
       "prev_long":null,
-      "isLocalUni":null,
-      "ADSB_msg":"8d781343588df58f4c4b55f089ca"
+      "isLocalUni":null
     },
     {
       "id":4005,
@@ -8709,6 +9453,7 @@
       "latitude":51.27910549357786,
       "longitude":11.150588989257812,
       "altitude":37000,
+      "callsign":null,
       "Subtype":null,
       "IC":null,
       "RESV_A":null,
@@ -8747,8 +9492,7 @@
       "tgt_alt_source":null,
       "prev_lat":null,
       "prev_long":null,
-      "isLocalUni":null,
-      "ADSB_msg":"8d4bb84758bf059dc63ae97f368f"
+      "isLocalUni":null
     },
     {
       "id":4033,
@@ -8771,6 +9515,7 @@
       "latitude":51.13870394431938,
       "longitude":10.89019775390625,
       "altitude":38000,
+      "callsign":null,
       "Subtype":null,
       "IC":null,
       "RESV_A":null,
@@ -8809,8 +9554,7 @@
       "tgt_alt_source":null,
       "prev_lat":null,
       "prev_long":null,
-      "isLocalUni":null,
-      "ADSB_msg":"8d4ba9ed58c38586362d9483bcd4"
+      "isLocalUni":null
     },
     {
       "id":4036,
@@ -8833,6 +9577,7 @@
       "latitude":51.2786865234375,
       "longitude":11.153793334960938,
       "altitude":37000,
+      "callsign":null,
       "Subtype":null,
       "IC":null,
       "RESV_A":null,
@@ -8871,8 +9616,7 @@
       "tgt_alt_source":null,
       "prev_lat":null,
       "prev_long":null,
-      "isLocalUni":null,
-      "ADSB_msg":"8d4bb84758bf059db43b137d9b59"
+      "isLocalUni":null
     },
     {
       "id":4043,
@@ -8895,6 +9639,7 @@
       "latitude":51.19093555515095,
       "longitude":11.466140747070312,
       "altitude":27300,
+      "callsign":null,
       "Subtype":null,
       "IC":null,
       "RESV_A":null,
@@ -8933,8 +9678,7 @@
       "tgt_alt_source":null,
       "prev_lat":null,
       "prev_long":null,
-      "isLocalUni":null,
-      "ADSB_msg":"8d781343588dc58efa4b11d7fffd"
+      "isLocalUni":null
     },
     {
       "id":4079,
@@ -8957,6 +9701,7 @@
       "latitude":51.13870394431938,
       "longitude":10.89019775390625,
       "altitude":38000,
+      "callsign":null,
       "Subtype":null,
       "IC":null,
       "RESV_A":null,
@@ -8995,8 +9740,7 @@
       "tgt_alt_source":null,
       "prev_lat":null,
       "prev_long":null,
-      "isLocalUni":null,
-      "ADSB_msg":"8d4ba9ed58c38217ce3cee654490"
+      "isLocalUni":null
     },
     {
       "id":4095,
@@ -9019,6 +9763,7 @@
       "latitude":51.19093555515095,
       "longitude":11.466140747070312,
       "altitude":27275,
+      "callsign":null,
       "Subtype":null,
       "IC":null,
       "RESV_A":null,
@@ -9057,8 +9802,7 @@
       "tgt_alt_source":null,
       "prev_lat":null,
       "prev_long":null,
-      "isLocalUni":null,
-      "ADSB_msg":"8d781343588db2205a5b2ddab6c2"
+      "isLocalUni":null
     },
     {
       "id":4102,
@@ -9081,6 +9825,7 @@
       "latitude":51.189213122351696,
       "longitude":11.461410522460938,
       "altitude":27250,
+      "callsign":null,
       "Subtype":null,
       "IC":null,
       "RESV_A":null,
@@ -9119,8 +9864,7 @@
       "tgt_alt_source":null,
       "prev_lat":null,
       "prev_long":null,
-      "isLocalUni":null,
-      "ADSB_msg":"8d781343588da58eb04ad381735e"
+      "isLocalUni":null
     },
     {
       "id":4127,
@@ -9143,6 +9887,7 @@
       "latitude":51.13870394431938,
       "longitude":10.89019775390625,
       "altitude":38000,
+      "callsign":null,
       "Subtype":null,
       "IC":null,
       "RESV_A":null,
@@ -9181,8 +9926,7 @@
       "tgt_alt_source":null,
       "prev_lat":null,
       "prev_long":null,
-      "isLocalUni":null,
-      "ADSB_msg":"8d4ba9ed58c382181a3c9d610b49"
+      "isLocalUni":null
     },
     {
       "id":4136,
@@ -9205,6 +9949,7 @@
       "latitude":51.27719685182733,
       "longitude":11.164169311523438,
       "altitude":37000,
+      "callsign":null,
       "Subtype":null,
       "IC":null,
       "RESV_A":null,
@@ -9243,8 +9988,69 @@
       "tgt_alt_source":null,
       "prev_lat":null,
       "prev_long":null,
-      "isLocalUni":null,
-      "ADSB_msg":"8d4bb84758bf059d743b9b1a110a"
+      "isLocalUni":null
+    },
+    {
+      "id":4137,
+      "ADSB_raw":"@0000654E83328d4ba9ed25508671e75ce04fc7fd;",
+      "Timestamp":"0000654E8332",
+      "ADSB_message":"8d4ba9ed25508671e75ce04fc7fd",
+      "SamplePos":null,
+      "df":null,
+      "tc":null,
+      "capability":null,
+      "icao":null,
+      "parity":null,
+      "surv_stat":null,
+      "NICsb":null,
+      "alt":null,
+      "Time":null,
+      "cpr_flag":null,
+      "cprLat":null,
+      "cprLong":null,
+      "latitude":null,
+      "longitude":null,
+      "altitude":null,
+      "callsign":"THY1953_SC",
+      "Subtype":null,
+      "IC":null,
+      "RESV_A":null,
+      "NAC":null,
+      "S_ew":null,
+      "V_ew":null,
+      "S_ns":null,
+      "V_ns":null,
+      "VrSrc":null,
+      "S_vr":null,
+      "Vr":null,
+      "RESV_B":null,
+      "S_Dif":null,
+      "Dif":null,
+      "S_hdg":null,
+      "Hdg":null,
+      "AS_t":null,
+      "AS":null,
+      "stype_code":null,
+      "sccc":null,
+      "lw_codes":null,
+      "op_mc":null,
+      "ver":null,
+      "NIC":null,
+      "NACp":null,
+      "SIL":null,
+      "HRD":null,
+      "bds_1":null,
+      "bds_2":null,
+      "mcp_alt":null,
+      "fms_alt":null,
+      "baro_set":null,
+      "VNAV_state":null,
+      "Alt_hold_state":null,
+      "Apr_state":null,
+      "tgt_alt_source":null,
+      "prev_lat":null,
+      "prev_long":null,
+      "isLocalUni":null
     },
     {
       "id":4158,
@@ -9267,6 +10073,7 @@
       "latitude":51.189213122351696,
       "longitude":11.461410522460938,
       "altitude":27200,
+      "callsign":null,
       "Subtype":null,
       "IC":null,
       "RESV_A":null,
@@ -9305,8 +10112,7 @@
       "tgt_alt_source":null,
       "prev_lat":null,
       "prev_long":null,
-      "isLocalUni":null,
-      "ADSB_msg":"8d781343588d8220005ae25cdd42"
+      "isLocalUni":null
     },
     {
       "id":4164,
@@ -9329,6 +10135,7 @@
       "latitude":51.27677788168697,
       "longitude":11.16729736328125,
       "altitude":37000,
+      "callsign":null,
       "Subtype":null,
       "IC":null,
       "RESV_A":null,
@@ -9367,8 +10174,69 @@
       "tgt_alt_source":null,
       "prev_lat":null,
       "prev_long":null,
-      "isLocalUni":null,
-      "ADSB_msg":"8d4bb84758bf059d623bc4176f6c"
+      "isLocalUni":null
+    },
+    {
+      "id":4181,
+      "ADSB_raw":"@000066A718D08d781343250c3079cf5820f05f0a;",
+      "Timestamp":"000066A718D0",
+      "ADSB_message":"8d781343250c3079cf5820f05f0a",
+      "SamplePos":null,
+      "df":null,
+      "tc":null,
+      "capability":null,
+      "icao":null,
+      "parity":null,
+      "surv_stat":null,
+      "NICsb":null,
+      "alt":null,
+      "Time":null,
+      "cpr_flag":null,
+      "cprLat":null,
+      "cprLong":null,
+      "latitude":null,
+      "longitude":null,
+      "altitude":null,
+      "callsign":"CCA935__##",
+      "Subtype":null,
+      "IC":null,
+      "RESV_A":null,
+      "NAC":null,
+      "S_ew":null,
+      "V_ew":null,
+      "S_ns":null,
+      "V_ns":null,
+      "VrSrc":null,
+      "S_vr":null,
+      "Vr":null,
+      "RESV_B":null,
+      "S_Dif":null,
+      "Dif":null,
+      "S_hdg":null,
+      "Hdg":null,
+      "AS_t":null,
+      "AS":null,
+      "stype_code":null,
+      "sccc":null,
+      "lw_codes":null,
+      "op_mc":null,
+      "ver":null,
+      "NIC":null,
+      "NACp":null,
+      "SIL":null,
+      "HRD":null,
+      "bds_1":null,
+      "bds_2":null,
+      "mcp_alt":null,
+      "fms_alt":null,
+      "baro_set":null,
+      "VNAV_state":null,
+      "Alt_hold_state":null,
+      "Apr_state":null,
+      "tgt_alt_source":null,
+      "prev_lat":null,
+      "prev_long":null,
+      "isLocalUni":null
     },
     {
       "id":4244,
@@ -9391,6 +10259,7 @@
       "latitude":51.27542786679025,
       "longitude":11.176834106445312,
       "altitude":37000,
+      "callsign":null,
       "Subtype":null,
       "IC":null,
       "RESV_A":null,
@@ -9429,8 +10298,7 @@
       "tgt_alt_source":null,
       "prev_lat":null,
       "prev_long":null,
-      "isLocalUni":null,
-      "ADSB_msg":"8f4bb84758bf059d283c418a953b"
+      "isLocalUni":null
     },
     {
       "id":4299,
@@ -9453,6 +10321,7 @@
       "latitude":51.18381306276483,
       "longitude":11.446685791015625,
       "altitude":27100,
+      "callsign":null,
       "Subtype":null,
       "IC":null,
       "RESV_A":null,
@@ -9491,8 +10360,7 @@
       "tgt_alt_source":null,
       "prev_lat":null,
       "prev_long":null,
-      "isLocalUni":null,
-      "ADSB_msg":"8d781343588d458dc84a12a31e28"
+      "isLocalUni":null
     },
     {
       "id":4303,
@@ -9515,6 +10383,7 @@
       "latitude":51.27542786679025,
       "longitude":11.176834106445312,
       "altitude":37000,
+      "callsign":null,
       "Subtype":null,
       "IC":null,
       "RESV_A":null,
@@ -9553,8 +10422,7 @@
       "tgt_alt_source":null,
       "prev_lat":null,
       "prev_long":null,
-      "isLocalUni":null,
-      "ADSB_msg":"8f4bb84758bf022eec4c52cb3d9d"
+      "isLocalUni":null
     },
     {
       "id":4328,
@@ -9577,6 +10445,7 @@
       "latitude":51.27542786679025,
       "longitude":11.176834106445312,
       "altitude":37000,
+      "callsign":null,
       "Subtype":null,
       "IC":null,
       "RESV_A":null,
@@ -9615,8 +10484,7 @@
       "tgt_alt_source":null,
       "prev_lat":null,
       "prev_long":null,
-      "isLocalUni":null,
-      "ADSB_msg":"8f4bb84758bf022eda4c7a7e4dfe"
+      "isLocalUni":null
     },
     {
       "id":4347,
@@ -9639,6 +10507,7 @@
       "latitude":51.14717645160222,
       "longitude":10.861740112304688,
       "altitude":38000,
+      "callsign":null,
       "Subtype":null,
       "IC":null,
       "RESV_A":null,
@@ -9677,8 +10546,69 @@
       "tgt_alt_source":null,
       "prev_lat":null,
       "prev_long":null,
-      "isLocalUni":null,
-      "ADSB_msg":"8d4ba9ed58c38587a22c1f5ec300"
+      "isLocalUni":null
+    },
+    {
+      "id":4433,
+      "ADSB_raw":"@00006A4BFB848f4bb84723407539c84820174733;",
+      "Timestamp":"00006A4BFB84",
+      "ADSB_message":"8f4bb84723407539c84820174733",
+      "SamplePos":null,
+      "df":null,
+      "tc":null,
+      "capability":null,
+      "icao":null,
+      "parity":null,
+      "surv_stat":null,
+      "NICsb":null,
+      "alt":null,
+      "Time":null,
+      "cpr_flag":null,
+      "cprLat":null,
+      "cprLong":null,
+      "latitude":null,
+      "longitude":null,
+      "altitude":null,
+      "callsign":"PGT92D__EC",
+      "Subtype":null,
+      "IC":null,
+      "RESV_A":null,
+      "NAC":null,
+      "S_ew":null,
+      "V_ew":null,
+      "S_ns":null,
+      "V_ns":null,
+      "VrSrc":null,
+      "S_vr":null,
+      "Vr":null,
+      "RESV_B":null,
+      "S_Dif":null,
+      "Dif":null,
+      "S_hdg":null,
+      "Hdg":null,
+      "AS_t":null,
+      "AS":null,
+      "stype_code":null,
+      "sccc":null,
+      "lw_codes":null,
+      "op_mc":null,
+      "ver":null,
+      "NIC":null,
+      "NACp":null,
+      "SIL":null,
+      "HRD":null,
+      "bds_1":null,
+      "bds_2":null,
+      "mcp_alt":null,
+      "fms_alt":null,
+      "baro_set":null,
+      "VNAV_state":null,
+      "Alt_hold_state":null,
+      "Apr_state":null,
+      "tgt_alt_source":null,
+      "prev_lat":null,
+      "prev_long":null,
+      "isLocalUni":null
     },
     {
       "id":4463,
@@ -9701,6 +10631,7 @@
       "latitude":51.18041474940413,
       "longitude":11.4373779296875,
       "altitude":27000,
+      "callsign":null,
       "Subtype":null,
       "IC":null,
       "RESV_A":null,
@@ -9739,8 +10670,7 @@
       "tgt_alt_source":null,
       "prev_lat":null,
       "prev_long":null,
-      "isLocalUni":null,
-      "ADSB_msg":"8d781343588d058d364998ce4ed7"
+      "isLocalUni":null
     },
     {
       "id":4474,
@@ -9763,6 +10693,7 @@
       "latitude":51.27542786679025,
       "longitude":11.176834106445312,
       "altitude":37000,
+      "callsign":null,
       "Subtype":null,
       "IC":null,
       "RESV_A":null,
@@ -9801,8 +10732,7 @@
       "tgt_alt_source":null,
       "prev_lat":null,
       "prev_long":null,
-      "isLocalUni":null,
-      "ADSB_msg":"8f4bb84758bf022e9e4cff3b2e57"
+      "isLocalUni":null
     },
     {
       "id":4507,
@@ -9825,6 +10755,7 @@
       "latitude":51.17966991359904,
       "longitude":11.435394287109375,
       "altitude":26975,
+      "callsign":null,
       "Subtype":null,
       "IC":null,
       "RESV_A":null,
@@ -9863,8 +10794,7 @@
       "tgt_alt_source":null,
       "prev_lat":null,
       "prev_long":null,
-      "isLocalUni":null,
-      "ADSB_msg":"8d781343588bf58d16497e594f1d"
+      "isLocalUni":null
     }
   ]
 }

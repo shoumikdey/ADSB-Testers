@@ -33,43 +33,43 @@ def getTC(frame):
     else:
         return None
 
-def capability(frame):
-    bin_frame = hexToDec(frame)
-    return int(bin_frame[5:8], 2)
-
-def icao(frame):
-    return frame[2:8]
-
-def parity(frame):
-    return frame[22:]
-
-def surveillance_status(frame):
-    bin_frame = hexToDec(frame)
-    return bin_frame[32:37]
-
-def NICsb(frame):
-    bin_frame = hexToDec(frame)
-    return bin_frame[39]
-
-def Altitude(frame):
-    bin_frame = hexToDec(frame)
-    return bin_frame[40:52]
-
-def Time(frame):
-    bin_frame = hexToDec(frame)
-    return bin_frame[52]
-
-def CPR(frame):
-    bin_frame = hexToDec(frame)
-    return bin_frame[53]
-
-def cprLat(frame):
-    bin_frame = hexToDec(frame)
-    return bin_frame[54:71]
-
-def cprLong(frame):
-    bin_frame = hexToDec(frame)
-    return bin_frame[71:88]
+# def capability(frame):
+#     bin_frame = hexToDec(frame)
+#     return int(bin_frame[5:8], 2)
+#
+# def icao(frame):
+#     return frame[2:8]
+#
+# def parity(frame):
+#     return frame[22:]
+#
+# def surveillance_status(frame):
+#     bin_frame = hexToDec(frame)
+#     return bin_frame[32:37]
+#
+# def NICsb(frame):
+#     bin_frame = hexToDec(frame)
+#     return bin_frame[39]
+#
+# def Altitude(frame):
+#     bin_frame = hexToDec(frame)
+#     return bin_frame[40:52]
+#
+# def Time(frame):
+#     bin_frame = hexToDec(frame)
+#     return bin_frame[52]
+#
+# def CPR(frame):
+#     bin_frame = hexToDec(frame)
+#     return bin_frame[53]
+#
+# def cprLat(frame):
+#     bin_frame = hexToDec(frame)
+#     return bin_frame[54:71]
+#
+# def cprLong(frame):
+#     bin_frame = hexToDec(frame)
+#     return bin_frame[71:88]
 
 def const_frame():
 
@@ -100,6 +100,7 @@ def const_frame():
             "latitude":None,
             "longitude":None,
             "altitude":None,
+            "callsign":None,
             #Airborne velocity Subtype 1data
             "Subtype":None,
             "IC":None,
@@ -157,7 +158,7 @@ def decode(file_obj, fileOut_obj, fileName):
     for frames in data["data"]:
         x = list()
         if identifier1(df(frames['ADSB_message']), getTC(frames['ADSB_message'])):
-            transformer1(frames['ADSB_message'], const_frame()['data'], df(frames['ADSB_message']), getTC(frames['ADSB_message']))
+            pos_data.append({**frames, **transformer1(frames['ADSB_message'], const_frame()['data'], df(frames['ADSB_message']), getTC(frames['ADSB_message']))})
             continue
         if identifier2(df(frames['ADSB_message']), getTC(frames['ADSB_message'])):
             transformer2(frames['ADSB_message'], const_frame()['data'], df(frames['ADSB_message']), getTC(frames['ADSB_message']))

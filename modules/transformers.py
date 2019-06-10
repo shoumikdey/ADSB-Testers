@@ -11,7 +11,15 @@ def hexToBin(hexdec):
 
 def transformer1(msg, json_frame, df, tc):
     #Aircraft identification
+    lookup_table = "#ABCDEFGHIJKLMNOPQRSTUVWXYZ#####_###############0123456789######"
     print(msg, "Aircraft identifier", df, tc)
+    data = hexToBin(msg)[40:96]
+    callsign = ""
+    for i in range(0, len(data), 6):
+        index = int(data[i:i+6], 2)
+        callsign += lookup_table[index]
+    json_frame['callsign'] = callsign
+    return json_frame
 
 def transformer2(msg, json_frame, df, tc):
     #surface position
@@ -50,7 +58,7 @@ def transformer3(msg, json_frame, df, tc):
             altitude = None
             print("No previous even msg found")
 
-    json_frame['ADSB_msg'], json_frame['latitude'], json_frame['longitude'], json_frame['altitude'] = msg, latitude, longitude, altitude
+    json_frame['latitude'], json_frame['longitude'], json_frame['altitude'] = latitude, longitude, altitude
     return json_frame
     #print(json.dumps(icao_last_seen, indent=2))
     #print(json_frame)

@@ -31,7 +31,7 @@ def latitude(lat_even, lat_odd, t_even, t_odd):
         latOdd -= 360
     if(NL(latEven) != NL(latOdd)):
         #exit("The positions are in different latitude zones")
-        return "Different latitude zones-------------------------------------------------------------------------------------------------------------------------------------------------"
+        return 0
         #exit()
     if(t_even >= t_odd):
         return latEven
