@@ -13,7 +13,7 @@ def transformer1(msg, json_frame, df, tc):
     #Aircraft identification
     lookup_table = "#ABCDEFGHIJKLMNOPQRSTUVWXYZ#####_###############0123456789######"
     print(msg, "Aircraft identifier", df, tc)
-    data = hexToBin(msg)[40:96]
+    data = hexToBin(msg)[40:88]
     callsign = ""
     for i in range(0, len(data), 6):
         index = int(data[i:i+6], 2)

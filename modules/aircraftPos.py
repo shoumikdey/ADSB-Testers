@@ -76,8 +76,9 @@ def altitude(bin_altitude):
 def main_pos(frame1, frame2):
     # frame1 = input("Enter frame 1: ")
     # frame2 = input("Enter frame 2: ")
-    hex_pos1 = frame1[8:22]
-    hex_pos2 = frame2[8:22]
+
+    hex_pos1 = "8D40621D58C382D690C8AC2863A7"[8:22]
+    hex_pos2 = "8D40621D58C386435CC412692AD6"[8:22]
     bin_frame1 = hexToDec(hex_pos1)
     bin_frame2 = hexToDec(hex_pos2)
     cpr_frame1 = bin_frame1[21]
@@ -108,7 +109,7 @@ def main_pos(frame1, frame2):
     else:
         # print("latitude:", latitude(bin_lat_even, bin_lat_odd, 1, 0))
         # print("longitude:", longitude(bin_lat_even, bin_lat_odd, bin_long_even, bin_long_odd, 1, 0, latitude(bin_lat_even, bin_lat_odd, 1, 0)))
-        return latitude(bin_lat_even, bin_lat_odd, 0, 1), longitude(bin_lat_even, bin_lat_odd, bin_long_even, bin_long_odd, 0, 1, latitude(bin_lat_even, bin_lat_odd, 0, 1)), altitude(bin_alt)
+        return latitude(bin_lat_even, bin_lat_odd, 1, 0), longitude(bin_lat_even, bin_lat_odd, bin_long_even, bin_long_odd, 1, 0, latitude(bin_lat_even, bin_lat_odd, 1, 0)), altitude(bin_alt)
 
     print("Altitude:",altitude(bin_alt),"ft OR", (altitude(bin_alt)*0.3048),"m")
 
