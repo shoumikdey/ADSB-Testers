@@ -40,7 +40,7 @@ def latitude(lat_even, lat_odd, t_even, t_odd):
 
 
 
-def longitude(lat_even1, lat_odd1, long_even, long_odd, t_even, t_odd, nl_lat):
+def longitude(long_even, long_odd, t_even, t_odd, nl_lat):
     #if(NL(int(lat_even1, 2)) != NL(int(lat_odd1, 2))):
     #print(NL(10.2157745361328), NL(10.2162144547802))
     if(t_even > t_odd):
@@ -105,11 +105,11 @@ def main_pos(frame1, frame2):
     if(bin_lat_even == bin_lat2):
         # print("latitude:", latitude(bin_lat_even, bin_lat_odd, 0, 1))
         # print("longitude:", longitude(bin_lat_even, bin_lat_odd, bin_long_even, bin_long_odd, 0, 1, latitude(bin_lat_even, bin_lat_odd, 0, 1)))
-        return latitude(bin_lat_even, bin_lat_odd, 0, 1), longitude(bin_lat_even, bin_lat_odd, bin_long_even, bin_long_odd, 0, 1, latitude(bin_lat_even, bin_lat_odd, 0, 1)), altitude(bin_alt)
+        return latitude(bin_lat_even, bin_lat_odd, 0, 1), longitude(bin_long_even, bin_long_odd, 0, 1, latitude(bin_lat_even, bin_lat_odd, 0, 1)), altitude(bin_alt)
     else:
         # print("latitude:", latitude(bin_lat_even, bin_lat_odd, 1, 0))
         # print("longitude:", longitude(bin_lat_even, bin_lat_odd, bin_long_even, bin_long_odd, 1, 0, latitude(bin_lat_even, bin_lat_odd, 1, 0)))
-        return latitude(bin_lat_even, bin_lat_odd, 1, 0), longitude(bin_lat_even, bin_lat_odd, bin_long_even, bin_long_odd, 1, 0, latitude(bin_lat_even, bin_lat_odd, 1, 0)), altitude(bin_alt)
+        return latitude(bin_lat_even, bin_lat_odd, 1, 0), longitude(bin_long_even, bin_long_odd, 1, 0, latitude(bin_lat_even, bin_lat_odd, 1, 0)), altitude(bin_alt)
 
     print("Altitude:",altitude(bin_alt),"ft OR", (altitude(bin_alt)*0.3048),"m")
 
