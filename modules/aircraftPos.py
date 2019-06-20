@@ -77,8 +77,8 @@ def main_pos(frame1, frame2):
     # frame1 = input("Enter frame 1: ")
     # frame2 = input("Enter frame 2: ")
 
-    hex_pos1 = "8D40621D58C382D690C8AC2863A7"[8:22]
-    hex_pos2 = "8D40621D58C386435CC412692AD6"[8:22]
+    hex_pos1 = frame1[8:22]
+    hex_pos2 = frame2[8:22]
     bin_frame1 = hexToDec(hex_pos1)
     bin_frame2 = hexToDec(hex_pos2)
     cpr_frame1 = bin_frame1[21]
